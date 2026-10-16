@@ -1,5 +1,33 @@
 [
  {
+  "id": "ofamed-kasa-lipat-xray-rb",
+  "name": "Ofamed Kasa Lipat X-Ray RB",
+  "url": null,
+  "price": null,
+  "img": "img/produk/ofamed-kasa-lipat-xray-rb.jpg"
+ },
+ {
+  "id": "kasa-big-gauze",
+  "name": "Ofamed Kasa Big Gauze X-Ray",
+  "url": null,
+  "price": null,
+  "img": "img/produk/kasa-big-gauze.jpg"
+ },
+ {
+  "id": "kasa-lipat-7-5",
+  "name": "Ofamed Kasa Lipat 7,5 cm x 7,5 cm",
+  "url": null,
+  "price": null,
+  "img": "img/produk/kasa-lipat-7-5.jpg"
+ },
+ {
+  "id": "ofahusada-kasa-roll-40x80",
+  "name": "Ofahusada Kasa Roll 40 x 80",
+  "url": null,
+  "price": null,
+  "img": "img/produk/ofahusada-kasa-roll-40x80.jpg"
+ },
+ {
   "id": "15323711587",
   "name": "Plastik Klip kecil sedang besar",
   "url": "https://tokopedia.com/ofamed/plastik-klip-kecil-sedang-besar",

@@ -49,7 +49,7 @@ header.site ul a:hover,header.site ul a[aria-current]{background-size:calc(100% 
 /* hero */
 .hero{padding-block:clamp(3rem,7vw,6rem)}
 .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,5rem);align-items:center}
-h1{font:600 clamp(2.75rem,6vw,5rem)/1.04 var(--serif);color:var(--navy);letter-spacing:-.02em;text-wrap:balance}
+h1{font:700 clamp(1.6rem,3.6vw,3.25rem)/1.1 var(--serif);white-space:nowrap;color:var(--navy);letter-spacing:-.02em;text-wrap:balance}
 .tag{font-size:1.25rem;color:var(--muted);margin-top:1.25rem;max-width:30ch}
 .cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
 .hero .wrap>*{min-width:0}
@@ -66,6 +66,10 @@ footer .logo{filter:brightness(0) invert(1)}
 .about h2{font:600 clamp(2rem,4.2vw,3.25rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em}
 .about p{color:var(--muted);max-width:60ch}
 .index img{height:56px;width:auto;max-width:70vw;display:block}
+.mk{background:var(--red);color:#fff;padding:0 .18em}
+.cdakb{height:68px;width:auto}
+.shots{display:grid;grid-template-columns:1.48fr 1fr 1.48fr;gap:1rem;margin-top:3rem}.shots img{width:100%;height:auto;display:block}
+.about h3{font:600 1.25rem/1.2 var(--serif);color:var(--navy);margin:1.5rem 0 .5rem}.about li{color:var(--muted);max-width:60ch}.about ul{padding-left:1.2rem}.about p+p{margin-top:1rem}
 .photo{overflow:hidden;position:relative;padding:0;color:#B9C6DA;font-size:.8125rem;
   background-image:linear-gradient(#ffffff14 1px,transparent 1px),linear-gradient(90deg,#ffffff14 1px,transparent 1px);background-size:44px 44px}
 .photo::after{z-index:1;content:"";position:absolute;right:0;top:0;width:26%;height:5px;background:var(--red)}
@@ -127,7 +131,7 @@ footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:
   .util span:first-child{display:none}
   header.site .wrap{flex-wrap:wrap;gap:0;padding-block:.5rem}header.site ul{flex-wrap:wrap}header.site ul a{padding-inline:.6rem}
   .hero .wrap,.intro .wrap,.products .head,.fg,.values .wrap,.facts .wrap{grid-template-columns:1fr}
-  .reel{aspect-ratio:16/10}.about .wrap{grid-template-columns:1fr}
+  .reel{aspect-ratio:16/10}.shots{grid-template-columns:1fr}.cdakb{height:40px;margin-left:auto}.about .wrap{grid-template-columns:1fr}
   .facts div,.facts div+div{padding:1rem 0;border-left:0}.facts div+div{border-top:1px solid var(--line)}
   .values article,.values article+article{padding:1.5rem 0;border-left:0}.values article+article{border-top:1px solid #4F7CC4}
 }
@@ -139,7 +143,8 @@ footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:
 <a class="skip" href="#main">Lewati ke konten</a>
 <div class="util"><div class="wrap"><span>Distributor alat kesehatan dan perlengkapan rumah sakit</span><a href="tel:+622182755489">(021) 8275 5489</a></div></div>
 <header class="site"><div class="wrap">
-  <a class="brand" href="index.html" aria-label="Ofamed, beranda"><img class="logo" src="img/ofamed.png" alt="Ofamed" width="140" height="44"><small>PT. Ofafa Duta Medika</small></a>
+  <a class="brand" href="index.html" aria-label="Ofamed, beranda"><img class="logo" src="img/ofamed.png" alt="Ofamed" width="140" height="44"><small>PT. Ofafa <span class="mk">Duta</span> Medika</small></a>
+  <img class="cdakb" src="img/cdakb.png" alt="Bersertifikat CDAKB, Cara Distribusi Alat Kesehatan yang Baik, Kementerian Kesehatan RI" width="112" height="56">
   <nav aria-label="Utama"><ul>
     <li><a href="index.html" aria-current="page">Beranda</a></li><li><a href="produk.html">Produk</a></li>
     <li><a href="index.html#tentang">Tentang Kami</a></li><li><a href="#kontak">Kontak</a></li>
@@ -149,7 +154,7 @@ footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:
 <main id="main">
 <section class="hero"><div class="wrap">
   <div>
-    <h1>PT. Ofafa Duta Medika</h1>
+    <h1>PT. Ofafa <span class="mk">Duta</span> Medika</h1>
     <p class="tag">Medical Equipment and Hospital Supplier</p>
     <div class="cta">
       <a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran">Minta Penawaran <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -180,10 +185,18 @@ footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:
 </div></section>
 
 <section class="about" id="tentang"><div class="wrap">
-  <div><h2>Tentang Kami</h2>
-    <p style="margin-top:1rem">Berdiri sejak September 2019 dan berkantor di Ruko Rose Garden 8 No. 18, Grand Galaxy City, Bekasi Selatan.</p></div>
+  <div><h2>Tentang Kami</h2></div>
   <div>
-    <p>Kami memasarkan produk dengan merek sendiri, OFAMED dan OFAHUSADA, antara lain kasa, apron, dan produk BMHP, serta unit dan instrumen medis lainnya.</p>
+    <p>PT. Ofafa Duta Medika berdiri pada September 2019, merupakan perusahaan dalam negeri (PMDN) yang bergerak di bidang alat kesehatan, berlokasi di Rukan Rose Garden 8 No. 18, Grand Galaxy City, Bekasi Selatan (Kota Bekasi).</p>
+    <p>Kami telah memiliki legalitas lengkap sesuai regulasi pemerintah seperti IDAK dan CDAKB, serta memiliki merek sendiri yang telah terdaftar di HAKI dengan merek OFAMED dan OFAHUSADA.</p>
+    <p>Produk alat kesehatan yang kami pasarkan sudah memenuhi standar dan berkualitas tinggi, seperti produk kasa, apron, serta produk BMHP dan produk unit / instrumen lainnya.</p>
+    <h3>Visi</h3><p>Menjadikan PT. Ofafa Duta Medika sebagai salah satu penyedia alat kesehatan yang profesional dengan mengedepankan pelayanan dan kualitas produk yang terbaik.</p>
+    <h3>Misi</h3><ul><li>Ikut berkontribusi dalam menyehatkan bangsa.</li><li>Secara konsisten menyediakan alat kesehatan yang berkualitas, lengkap, dengan harga yang rasional.</li><li>Membangun komunikasi yang berkelanjutan untuk memberikan solusi lengkap kebutuhan bagi pelanggan.</li><li>Memprioritaskan kepuasan pelanggan yang prima dan tumbuh bersama.</li></ul>
+  </div>
+  <div class="shots" style="grid-column:1/-1">
+    <img src="img/foto-kasa-lipat.jpg" alt="Petugas medis menunjukkan kemasan Ofamed Kasa Lipat" width="800" height="530" loading="lazy">
+    <img src="img/foto-ofahusada-box.jpg" alt="Petugas apotek memegang kotak Ofahusada Kassa Hydrophile isi 12 lembar" width="800" height="800" loading="lazy">
+    <img src="img/foto-ofahusada-roll.jpg" alt="Petugas medis menunjukkan kemasan Ofahusada Kasa Hydrophile 5 cm" width="800" height="530" loading="lazy">
   </div>
 </div></section>
 <section class="products" id="produk"><div class="wrap">
@@ -200,7 +213,7 @@ footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:
 
 <footer id="kontak" class="navy"><div class="wrap">
   <div class="fg">
-    <div><a class="brand" href="index.html" aria-label="Ofamed, beranda"><img class="logo" src="img/ofamed.png" alt="Ofamed" width="140" height="44"><small>PT. Ofafa Duta Medika</small></a>
+    <div><a class="brand" href="index.html" aria-label="Ofamed, beranda"><img class="logo" src="img/ofamed.png" alt="Ofamed" width="140" height="44"><small>PT. Ofafa <span class="mk">Duta</span> Medika</small></a>
       <p>Perusahaan alat kesehatan di Indonesia yang mengedepankan kepuasan pelanggan sebagai target utama perusahaan.</p></div>
     <div><h2>Contact Us</h2><address>Ruko Rose Garden 8/18, Grand Galaxy City, Jaka Setia, Bekasi Selatan, Jawa Barat.<br><br>Telp: <a href="tel:+622182755489">(021) 8275 5489</a><br>HP/WA: <a href="tel:+6282258475758">0822 5847 5758</a><br>Email: <a href="mailto:ofafadutamedika@yahoo.com">ofafadutamedika@yahoo.com</a></address></div>
     <div><h2>Online Shop</h2><div class="shops"><a class="btn" href="https://www.tokopedia.com/ofamed" rel="noopener">Tokopedia</a><a class="btn line" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran">WhatsApp</a></div></div>

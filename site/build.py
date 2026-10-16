@@ -12,7 +12,8 @@ cards = ''
 for p in P:
     n = clean(p['name'])
     wa = 'https://wa.me/6282258475758?text=' + u.quote(f'Halo, saya ingin meminta penawaran untuk {n}')
-    cards += f'''<li class="card" data-name="{html.escape(n.lower())}"><img src="{p['img']}" alt="{html.escape(n)}" width="200" height="200" loading="lazy"><h2>{html.escape(n)}</h2><p>Hubungi untuk harga</p><a class="btn" href="{wa}">Minta Penawaran</a><a class="alt" href="{p['url']}" rel="noopener">Lihat di Tokopedia<span class="sr"> : {html.escape(n)}</span></a></li>\n'''
+    tp = f'<a class="alt" href="{p["url"]}" rel="noopener">Lihat di Tokopedia<span class="sr"> : {html.escape(n)}</span></a>' if p['url'] else ''
+    cards += f'''<li class="card" data-name="{html.escape(n.lower())}"><img src="{p['img']}" alt="{html.escape(n)}" width="200" height="200" loading="lazy"><h2>{html.escape(n)}</h2><p>Hubungi untuk harga</p><a class="btn" href="{wa}">Minta Penawaran</a>{tp}</li>\n'''
 
 css = '''.cat{padding-block:clamp(2.5rem,6vw,4.5rem)}
 .cat h1{font-size:clamp(2.25rem,4.5vw,3.5rem)}.cat .lead{color:var(--muted);margin-top:.75rem;max-width:60ch}
@@ -21,7 +22,7 @@ css = '''.cat{padding-block:clamp(2.5rem,6vw,4.5rem)}
 .grid{list-style:none;padding:0;margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem}
 .card{display:flex;flex-direction:column;gap:.5rem;border:1px solid var(--line);padding:1rem}
 .card[hidden]{display:none}
-.card img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:var(--mist)}
+.card img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#fff}
 .card h2{font:600 1.0625rem/1.3 var(--serif);color:var(--navy)}
 .card p{font-size:.875rem;color:var(--muted)}
 .card .btn{margin-top:auto;justify-content:center;white-space:nowrap;padding-inline:1rem}
