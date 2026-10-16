@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ofamed Pitch C: Korporat</title>
+<meta name="description" content="PT. Ofafa Duta Medika, distributor alat kesehatan dan perlengkapan rumah sakit di Indonesia.">
+<style>
+:root{
+  --red:#C8202B; --red-deep:#9E1520; --char:#0B2F70; --ink:#1B2026; --muted:#4A5360; --line:#D3DDEC; --grey:#EDF3FB; --white:#fff;
+  --head:Georgia,"Times New Roman",serif; --body:Georgia,"Times New Roman",serif; --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;font-size:1.0625rem}
+::selection{background:var(--char);color:#fff}
+:focus-visible{outline:3px solid var(--char);outline-offset:3px}
+.on-red :focus-visible,footer :focus-visible{outline-color:#fff}
+a{color:inherit}
+.wrap{width:min(1240px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:.75rem 1rem;z-index:10}
+.skip:focus{left:1rem;top:1rem}
+
+header.site{background:var(--white);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:80px}
+.brand{font:700 1.375rem/1 var(--head);text-decoration:none;letter-spacing:0;color:var(--char)}
+.brand mark{background:var(--red);color:#fff;padding:0 .3em;margin:0 .05em}
+header.site ul{display:flex;list-style:none;padding:0;gap:.25rem;align-items:center}
+header.site ul a{display:inline-flex;align-items:center;min-height:44px;padding-inline:1rem;text-decoration:none;font:600 1rem/1 var(--head);letter-spacing:.04em;text-transform:uppercase}
+header.site ul a:hover{color:var(--red)}
+header.site ul a.cta{background:var(--red);color:#fff;margin-left:.5rem}
+header.site ul a.cta:hover{background:var(--red-deep);color:#fff}
+
+.btn{display:inline-flex;align-items:center;gap:.6rem;min-height:52px;padding:.85rem 1.75rem;background:var(--char);color:#fff;font:600 1rem/1 var(--head);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;
+  border:2px solid var(--char);transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease)}
+.btn:hover{background:var(--red);border-color:var(--red)}
+.btn.white{background:#fff;color:var(--red);border-color:#fff}
+.btn.white:hover{background:var(--char);color:#fff;border-color:var(--char)}
+.btn.line{background:transparent;color:#fff;border-color:#fff}
+.btn.line:hover{background:#fff;color:var(--red)}
+.btn svg{width:18px;height:18px}
+
+/* hero: red field with the enquiry form as the primary action */
+.hero{background:var(--red);color:#fff}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,5rem);padding-block:clamp(3rem,7vw,6rem);align-items:center}
+h1{font:700 clamp(2.5rem,5.6vw,4.5rem)/1.05 var(--head);letter-spacing:-.01em;text-wrap:balance}
+.tag{font:500 1.375rem/1.3 var(--head);margin-top:1.25rem;letter-spacing:.02em}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.form{background:#fff;color:var(--ink);padding:clamp(1.5rem,3vw,2.25rem);box-shadow:0 24px 40px -22px rgba(0,0,0,.5),0 3px 8px rgba(0,0,0,.18)}
+.form h2{font:700 1.625rem/1.1 var(--head);letter-spacing:.01em;color:var(--char)}
+.form p{color:var(--muted);font-size:.9375rem;margin-top:.35rem}
+.form label{display:block;font-weight:600;font-size:.875rem;margin-top:1rem}
+.form input,.form textarea{width:100%;margin-top:.35rem;padding:.8rem .9rem;border:1.5px solid #B7BEC7;border-radius:0;font:400 1rem/1.4 var(--body);color:var(--ink);background:#fff;min-height:48px}
+.form input:focus,.form textarea:focus{border-color:var(--char);outline:2px solid var(--char);outline-offset:0}
+.form textarea{resize:vertical;min-height:96px}
+.form .btn{width:100%;justify-content:center;margin-top:1.25rem;background:var(--red);border-color:var(--red)}
+.form .btn:hover{background:var(--char);border-color:var(--char)}
+.form small{display:block;margin-top:.75rem;font-size:.8125rem;color:var(--muted)}
+
+/* intro */
+.intro{padding-block:clamp(3.5rem,8vw,7rem)}
+.intro .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:start}
+.intro h2{font:700 clamp(2rem,4.2vw,3.25rem)/1.1 var(--head);color:var(--char);text-wrap:balance}
+.intro h2::after{content:"";display:block;width:64px;height:5px;background:var(--red);margin-top:1.25rem}
+.intro p{font-size:1.1875rem;color:var(--muted);max-width:58ch}
+.intro .btn{margin-top:1.75rem}
+
+/* values: grey band, one row, rules between */
+.values{background:var(--grey);padding-block:clamp(2.5rem,5vw,4rem)}
+.values .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.values article{padding:.5rem 2rem .5rem 0}
+.values article+article{padding-left:2rem;border-left:2px solid var(--line)}
+.values h3{font:700 clamp(1.5rem,2.6vw,2.25rem)/1.1 var(--head);color:var(--red)}
+.values p{margin-top:.75rem;color:var(--muted);max-width:34ch}
+
+/* products: catalogue tiles */
+.products{padding-block:clamp(3.5rem,8vw,7rem)}
+.products h2{font:700 clamp(2rem,4.2vw,3.25rem)/1.1 var(--head);color:var(--char)}
+.products .lead{color:var(--muted);max-width:60ch;margin-top:.9rem}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+.tile{text-decoration:none;display:flex;flex-direction:column;border:1px solid var(--line);background:#fff;transition:border-color .25s var(--ease),transform .35s var(--ease)}
+.tile:hover{border-color:var(--char);transform:translateY(-4px)}
+.tile .img{aspect-ratio:16/9;display:grid;place-items:center;font:700 clamp(1.5rem,3vw,2.25rem)/1.15 var(--head);text-align:center;padding:1rem}
+.tile.a .img{background:#0B0B0C;color:#D8B45A}
+.tile.b .img{background:var(--grey);color:var(--char)}
+.tile.b .img i{font-style:normal;color:var(--red)}
+.tile .cap{display:flex;justify-content:space-between;align-items:center;padding:.5rem 1.25rem;min-height:56px;font:600 1rem/1 var(--head);letter-spacing:.06em;text-transform:uppercase;border-top:4px solid var(--red)}
+.todo{font-size:.8125rem;color:var(--muted);margin-top:1rem}
+
+footer{background:var(--char);color:#fff;border-top:6px solid var(--red);padding-block:clamp(3rem,6vw,4.5rem) 1.25rem}
+footer .brand{color:#fff;font-size:1.75rem}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:3rem}
+footer h2{font:700 1.25rem/1 var(--head);text-transform:uppercase;letter-spacing:.06em;margin-bottom:1rem}
+footer p,footer address{font-style:normal;color:#D5D9DE;max-width:40ch}
+footer .brand+p{margin-top:1rem}
+footer a:not(.btn){color:#fff}
+footer .shops{display:flex;flex-wrap:wrap;gap:.75rem}
+footer .btn{background:var(--red);border-color:var(--red)}footer .btn:hover{background:#fff;color:var(--char);border-color:#fff}
+footer .btn.line{background:transparent;border-color:#fff;color:#fff}footer .btn.line:hover{background:#fff;color:var(--char)}
+.legal{margin-top:3rem;padding-top:1rem;border-top:1px solid #3A424B;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.875rem;color:#B6BCC4}
+.legal a{display:inline-flex;align-items:center;min-height:44px;margin-right:1.25rem}
+
+@media (max-width:860px){
+  header.site ul li:not(:last-child){display:none}
+  .hero .wrap,.intro .wrap,.tiles,.fg,.values .wrap{grid-template-columns:1fr}
+  .values article,.values article+article{padding:1.25rem 0;border-left:0}.values article+article{border-top:2px solid var(--line)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#produk">Lewati ke produk</a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="#">Ofafa <mark>Duta</mark> Medika</a>
+  <nav aria-label="Utama"><ul>
+    <li><a href="#">Beranda</a></li><li><a href="#produk">Produk</a></li><li><a href="#">Tentang Kami</a></li>
+    <li><a class="cta" href="#penawaran">Minta Penawaran</a></li>
+  </ul></nav>
+</div></header>
+
+<main>
+<section class="hero on-red"><div class="wrap">
+  <div>
+    <h1>PT. Ofafa Duta Medika</h1>
+    <p class="tag">Medical Equipment and Hospital Supplier</p>
+    <div class="cta">
+      <a class="btn white" href="#produk">Lihat Produk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn line" href="#kontak">Hubungi Kami</a>
+    </div>
+  </div>
+  <form class="form" id="penawaran" action="#" onsubmit="return false">
+    <h2>Minta Penawaran</h2>
+    <p>Tim kami membalas dalam jam kerja.</p>
+    <label for="n">Nama</label><input id="n" name="nama" autocomplete="name" required>
+    <label for="t">Telepon / WhatsApp</label><input id="t" name="telepon" type="tel" autocomplete="tel" required>
+    <label for="m">Kebutuhan Anda</label><textarea id="m" name="pesan" required></textarea>
+    <button class="btn" type="submit">Kirim Permintaan</button>
+    <small>Contoh tampilan; formulir belum terhubung.</small>
+  </form>
+</div></section>
+
+<section class="intro"><div class="wrap">
+  <h2>Indonesia's Medical Equipment Distributor</h2>
+  <div>
+    <p>PT. Ofafa Duta Medika merupakan perusahaan distributor alat kesehatan di Indonesia yang memiliki visi dan misi yang berintegritas tinggi serta jangkauan global yang dipersembahkan untuk kepuasan pelanggan.</p>
+    <a class="btn" href="#">Selengkapnya <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</div></section>
+
+<section class="values" aria-label="Nilai kami"><div class="wrap">
+  <article><h3>Responsive</h3><p>Kami membalas dengan baik dalam jam kerja. Kepuasan Anda adalah prioritas kami.</p></article>
+  <article><h3>Quality</h3><p>Barang yang kami distribusikan terjamin dan berkualitas, dari pengemasan hingga pengiriman.</p></article>
+  <article><h3>Support</h3><p>Kami selalu mendukung kebutuhan Anda. Jangan ragu untuk bertanya kepada kami.</p></article>
+</div></section>
+
+<section class="products" id="produk"><div class="wrap">
+  <h2>Exclusive Product by Ofamed</h2>
+  <p class="lead">Produk kami dikembangkan dengan kualitas tinggi dengan berbagai jenis dan kategori unggulan yang diciptakan untuk kepuasan pelanggan.</p>
+  <div class="tiles">
+    <a class="tile a" href="#"><div class="img">Ofafa<br>Beauty Care</div><div class="cap"><span>Lihat produk</span><span aria-hidden="true">→</span></div></a>
+    <a class="tile b" href="#"><div class="img"><span><i>+</i> Ofahusada</span></div><div class="cap"><span>Lihat produk</span><span aria-hidden="true">→</span></div></a>
+  </div>
+  <p class="todo">Draft: logo asli dan foto produk menyusul dari klien.</p>
+</div></section>
+</main>
+
+<footer id="kontak"><div class="wrap">
+  <div class="fg">
+    <div><a class="brand" href="#">Ofafa <mark>Duta</mark> Medika</a>
+      <p>Perusahaan alat kesehatan di Indonesia yang mengedepankan kepuasan pelanggan sebagai target utama perusahaan.</p></div>
+    <div><h2>Contact Us</h2><address>Ruko Rose Garden 8/18, Grand Galaxy City, Jaka Setia, Bekasi Selatan, Jawa Barat.<br><br>Telp: <a href="tel:+622182755489">+62 21 8275 5489</a></address></div>
+    <div><h2>Online Shop &amp; FAQ</h2><div class="shops"><a class="btn" href="#">Shopee</a><a class="btn line" href="#">WhatsApp</a></div></div>
+  </div>
+  <div class="legal"><span>© PT. Ofafa Duta Medika</span><span><a href="#">Beranda</a><a href="#">Tentang Kami</a><a href="#">Kebijakan Privasi</a></span></div>
+</div></footer>
+</body>
+</html>

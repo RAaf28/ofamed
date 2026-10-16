@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ofamed | PT. Ofafa Duta Medika</title>
+<meta name="description" content="PT. Ofafa Duta Medika, distributor alat kesehatan dan perlengkapan rumah sakit di Indonesia.">
+<meta property="og:title" content="Ofamed | PT. Ofafa Duta Medika"><meta property="og:description" content="Distributor alat kesehatan dan perlengkapan rumah sakit di Indonesia."><meta property="og:image" content="img/ofamed.png"><link rel="icon" href="img/ofamed.png">
+<style>
+:root{
+  --navy:#0D3B85; --navy-2:#1A55B5; --red:#C4202B; --red-deep:#9C1620;
+  --white:#fff; --mist:#EDF3FB; --line:#D3DDEC; --ink:#16202F; --muted:#485467;
+  --serif:Georgia,"Times New Roman",serif; --sans:Georgia,"Times New Roman",serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--navy);color:#fff}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.navy :focus-visible{outline-color:#fff}
+a{color:inherit}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:.75rem 1rem;z-index:10}
+.skip:focus{left:1rem;top:1rem}
+
+.util{background:var(--red);color:#fff;font-size:.8125rem}
+.util .wrap{display:flex;justify-content:space-between;gap:1rem;min-height:40px;align-items:center}
+.util a{text-decoration:none;display:inline-flex;align-items:center;min-height:40px}
+.util a:hover{text-decoration:underline}
+
+header.site{border-bottom:1px solid var(--line);background:var(--white);position:sticky;top:0;z-index:5}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:80px}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.1}
+.brand strong{font:600 1.375rem/1.1 var(--serif);color:var(--navy);letter-spacing:-.005em}
+.brand strong i{font-style:normal;color:var(--red)}
+.brand small{font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:.25rem}
+header.site ul{display:flex;list-style:none;padding:0;gap:.25rem}
+header.site ul a{display:inline-flex;align-items:center;min-height:44px;padding-inline:1rem;text-decoration:none;font-weight:500;font-size:.9375rem;color:var(--ink);
+  background:linear-gradient(var(--red),var(--red)) bottom .5rem left 1rem/0 2px no-repeat;transition:background-size .35s var(--ease)}
+header.site ul a:hover,header.site ul a[aria-current]{background-size:calc(100% - 2rem) 2px}
+.btn{display:inline-flex;align-items:center;gap:.6rem;min-height:48px;padding:.8rem 1.6rem;border-radius:2px;background:var(--red);color:#fff;font:600 .9375rem/1 var(--sans);text-decoration:none;
+  border:1.5px solid var(--red);transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease)}
+.btn:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.btn.line{background:transparent;color:var(--navy);border-color:var(--navy)}
+.btn.line:hover{background:var(--navy);color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* hero */
+.hero{padding-block:clamp(3rem,7vw,6rem)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+h1{font:600 clamp(2.75rem,6vw,5rem)/1.04 var(--serif);color:var(--navy);letter-spacing:-.02em;text-wrap:balance}
+.tag{font-size:1.25rem;color:var(--muted);margin-top:1.25rem;max-width:30ch}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.hero .wrap>*{min-width:0}
+.reel{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;aspect-ratio:4/5;align-items:stretch}
+.reel::-webkit-scrollbar{display:none}
+.reel figure{flex:0 0 100%;scroll-snap-align:center;margin:0;display:grid;place-items:center;align-content:center;gap:1.5rem;padding:1.5rem;background:var(--white);border:1px solid var(--line)}
+.reel img{max-width:90%;max-height:70%;width:auto;height:auto;object-fit:contain}
+.reel .dark{background:#000;border-color:#000}.reel .dark img{max-height:100%}
+.reel:focus-visible{outline-offset:-3px}
+.logo{height:44px;width:auto;display:block}
+footer .logo{filter:brightness(0) invert(1)}
+.about{padding-block:clamp(3.5rem,8vw,7rem);background:var(--mist)}
+.about .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2rem,6vw,6rem)}
+.about h2{font:600 clamp(2rem,4.2vw,3.25rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em}
+.about p{color:var(--muted);max-width:60ch}
+.index img{height:56px;width:auto;max-width:70vw;display:block}
+.photo{overflow:hidden;position:relative;padding:0;color:#B9C6DA;font-size:.8125rem;
+  background-image:linear-gradient(#ffffff14 1px,transparent 1px),linear-gradient(90deg,#ffffff14 1px,transparent 1px);background-size:44px 44px}
+.photo::after{z-index:1;content:"";position:absolute;right:0;top:0;width:26%;height:5px;background:var(--red)}
+
+.facts{border-block:1px solid var(--line);background:var(--mist)}
+.facts .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.facts div{padding:1.4rem 1.5rem 1.4rem 0}
+.facts div+div{padding-left:1.5rem;border-left:1px solid var(--line)}
+.facts dt{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.facts dd{font:500 1.1875rem/1.35 var(--serif);color:var(--navy);margin-top:.35rem}
+
+/* intro */
+.intro{padding-block:clamp(3.5rem,8vw,7rem)}
+.intro .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2rem,6vw,6rem);align-items:start}
+.intro h2{font:600 clamp(2rem,4.2vw,3.25rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em;text-wrap:balance}
+.intro p{font-size:1.1875rem;color:var(--muted);max-width:60ch}
+.more{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;margin-top:1.25rem;font-weight:600;color:var(--navy);text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:2px;text-underline-offset:6px}
+.more:hover{color:var(--red)}
+
+/* values: three typographic columns, ruled, no icons */
+.values{background:var(--navy);color:#fff;padding-block:clamp(3rem,6vw,5rem)}
+.values .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.values article{padding-right:2rem}
+.values article+article{padding-left:2rem;border-left:1px solid #4F7CC4}
+.values h3{font:600 clamp(1.75rem,3vw,2.5rem)/1.1 var(--serif);letter-spacing:-.01em}
+.values h3::after{content:"";display:block;width:36px;height:3px;background:var(--red);margin-top:1rem}
+.values p{color:#D5DEEC;margin-top:1.1rem;max-width:34ch}
+
+/* products: a catalogue index */
+.products{padding-block:clamp(3.5rem,8vw,7rem)}
+.products .head{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2rem,6vw,6rem);align-items:end;margin-bottom:2.5rem}
+.products h2{font:600 clamp(2rem,4.2vw,3.25rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em;text-wrap:balance}
+.products .lead{color:var(--muted);max-width:56ch}
+.index{border-top:2px solid var(--navy)}
+.index a{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1.5rem;padding:2rem .5rem;border-bottom:1px solid var(--line);text-decoration:none;
+  transition:background .3s var(--ease),padding .3s var(--ease)}
+.index a:hover{background:var(--mist);padding-inline:1.25rem}
+.index b{display:block;font:600 clamp(1.75rem,3.4vw,2.75rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em}
+.index b i{font-style:normal;color:var(--red)}
+.index small{display:block;color:var(--muted);margin-top:.4rem}
+.index svg{width:30px;height:30px;color:var(--red);transition:transform .35s var(--ease)}
+.index a:hover svg{transform:translateX(6px)}
+.priv{position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:20;max-width:560px;margin-inline:auto;background:var(--navy);color:#fff;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;box-shadow:0 8px 30px #0006}.priv[hidden]{display:none}.priv p{flex:1 1 260px;font-size:.875rem;line-height:1.5}.priv .btn{min-height:44px}
+.todo{font-size:.8125rem;color:var(--muted);margin-top:1rem}
+
+footer{background:var(--navy);color:#fff;border-top:6px solid var(--red);padding-block:clamp(3rem,6vw,4.5rem) 1.25rem}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:3rem}
+footer .brand strong{color:#fff;font-size:1.5rem}footer .brand strong i{color:#FF8A92}footer .brand small{color:#B9C6DA}
+footer h2{font:600 1.125rem/1 var(--serif);margin-bottom:1rem}
+footer p,footer address{font-style:normal;color:#D5DEEC;max-width:40ch}
+footer .brand+p{margin-top:1rem}
+footer a:not(.btn){color:#fff}
+footer .shops{display:flex;flex-wrap:wrap;gap:.75rem}
+footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:#fff;color:var(--navy)}
+.legal{margin-top:3rem;padding-top:1rem;border-top:1px solid #4F7CC4;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.875rem;color:#B9C6DA}
+.legal a{display:inline-flex;align-items:center;min-height:44px;margin-right:1.25rem}
+
+@media (max-width:860px){
+  .util span:first-child{display:none}
+  header.site .wrap{flex-wrap:wrap;gap:0;padding-block:.5rem}header.site ul{flex-wrap:wrap}header.site ul a{padding-inline:.6rem}
+  .hero .wrap,.intro .wrap,.products .head,.fg,.values .wrap,.facts .wrap{grid-template-columns:1fr}
+  .reel{aspect-ratio:16/10}.about .wrap{grid-template-columns:1fr}
+  .facts div,.facts div+div{padding:1rem 0;border-left:0}.facts div+div{border-top:1px solid var(--line)}
+  .values article,.values article+article{padding:1.5rem 0;border-left:0}.values article+article{border-top:1px solid #4F7CC4}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"PT. Ofafa Duta Medika","alternateName":"Ofamed","url":"https://ofamed.com","logo":"https://ofamed.com/img/ofamed.png","email":"ofafadutamedika@yahoo.com","telephone":"+62218275489","address":{"@type":"PostalAddress","streetAddress":"Ruko Rose Garden 8 No. 18, Grand Galaxy City, Jaka Setia","addressLocality":"Bekasi Selatan","addressRegion":"Jawa Barat","addressCountry":"ID"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+<div class="util"><div class="wrap"><span>Distributor alat kesehatan dan perlengkapan rumah sakit</span><a href="tel:+622182755489">(021) 8275 5489</a></div></div>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="Ofamed, beranda"><img class="logo" src="img/ofamed.png" alt="Ofamed" width="140" height="44"><small>PT. Ofafa Duta Medika</small></a>
+  <nav aria-label="Utama"><ul>
+    <li><a href="index.html" aria-current="page">Beranda</a></li><li><a href="produk.html">Produk</a></li>
+    <li><a href="index.html#tentang">Tentang Kami</a></li><li><a href="#kontak">Kontak</a></li>
+  </ul></nav>
+</div></header>
+
+<main id="main">
+<section class="hero"><div class="wrap">
+  <div>
+    <h1>PT. Ofafa Duta Medika</h1>
+    <p class="tag">Medical Equipment and Hospital Supplier</p>
+    <div class="cta">
+      <a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran">Minta Penawaran <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn line" href="produk.html">Lihat Produk</a>
+    </div>
+  </div>
+  <div class="photo"><div class="reel" tabindex="0" role="region" aria-label="Logo produk Ofa" aria-roledescription="carousel"><figure><img src="img/ofamed.png" alt="Ofamed"></figure><figure><img src="img/ofahusada.png" alt="Ofahusada" loading="lazy"></figure><figure class="dark"><img src="img/beauty.png" alt="Ofafa Beauty Care" loading="lazy"></figure></div></div>
+</div></section>
+
+<section class="facts" aria-label="Ringkasan"><div class="wrap"><dl style="display:contents">
+  <div><dt>Bergerak di bidang</dt><dd>Distribusi alat kesehatan</dd></div>
+  <div><dt>Berkantor di</dt><dd>Bekasi Selatan, Jawa Barat</dd></div>
+  <div><dt>Perusahaan</dt><dd>Berdiri sejak 2019</dd></div>
+</dl></div></section>
+
+<section class="intro"><div class="wrap">
+  <h2>Indonesia's Medical Equipment Distributor</h2>
+  <div>
+    <p>PT. Ofafa Duta Medika merupakan perusahaan distributor alat kesehatan di Indonesia yang memiliki visi dan misi yang berintegritas tinggi serta jangkauan global yang dipersembahkan untuk kepuasan pelanggan.</p>
+    <a class="more" href="#tentang">Selengkapnya <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</div></section>
+
+<section class="values navy" aria-label="Nilai kami"><div class="wrap">
+  <article><h3>Responsive</h3><p>Kami membalas dengan baik dalam jam kerja. Kepuasan Anda adalah prioritas kami.</p></article>
+  <article><h3>Quality</h3><p>Barang yang kami distribusikan terjamin dan berkualitas, dari pengemasan hingga pengiriman.</p></article>
+  <article><h3>Support</h3><p>Kami selalu mendukung kebutuhan Anda. Jangan ragu untuk bertanya kepada kami.</p></article>
+</div></section>
+
+<section class="about" id="tentang"><div class="wrap">
+  <div><h2>Tentang Kami</h2>
+    <p style="margin-top:1rem">Berdiri sejak September 2019 dan berkantor di Ruko Rose Garden 8 No. 18, Grand Galaxy City, Bekasi Selatan.</p></div>
+  <div>
+    <p>Kami memasarkan produk dengan merek sendiri, OFAMED dan OFAHUSADA, antara lain kasa, apron, dan produk BMHP, serta unit dan instrumen medis lainnya.</p>
+  </div>
+</div></section>
+<section class="products" id="produk"><div class="wrap">
+  <div class="head">
+    <h2>Exclusive Product by Ofamed</h2>
+    <p class="lead">Produk kami dikembangkan dengan kualitas tinggi dengan berbagai jenis dan kategori unggulan yang diciptakan untuk kepuasan pelanggan.</p>
+  </div>
+  <div class="index">
+    <a href="produk.html"><span><img src="img/ofamed.png" alt="Ofamed" width="160" height="50"><small>Lihat produk</small></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a href="produk.html"><span><img src="img/ofahusada.png" alt="Ofahusada" width="200" height="56"><small>Lihat produk</small></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</div></section>
+</main>
+
+<footer id="kontak" class="navy"><div class="wrap">
+  <div class="fg">
+    <div><a class="brand" href="index.html" aria-label="Ofamed, beranda"><img class="logo" src="img/ofamed.png" alt="Ofamed" width="140" height="44"><small>PT. Ofafa Duta Medika</small></a>
+      <p>Perusahaan alat kesehatan di Indonesia yang mengedepankan kepuasan pelanggan sebagai target utama perusahaan.</p></div>
+    <div><h2>Contact Us</h2><address>Ruko Rose Garden 8/18, Grand Galaxy City, Jaka Setia, Bekasi Selatan, Jawa Barat.<br><br>Telp: <a href="tel:+622182755489">(021) 8275 5489</a><br>HP/WA: <a href="tel:+6282258475758">0822 5847 5758</a><br>Email: <a href="mailto:ofafadutamedika@yahoo.com">ofafadutamedika@yahoo.com</a></address></div>
+    <div><h2>Online Shop</h2><div class="shops"><a class="btn" href="https://www.tokopedia.com/ofamed" rel="noopener">Tokopedia</a><a class="btn line" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran">WhatsApp</a></div></div>
+  </div>
+  <div class="legal"><span>© PT. Ofafa Duta Medika</span><span><a href="index.html">Beranda</a><a href="produk.html">Produk</a><a href="index.html#tentang">Tentang Kami</a></span></div>
+</div></footer>
+<script>
+// auto-advance the logo reel; stops on hover/focus/touch and when reduced motion is requested
+(()=>{const r=document.querySelector('.reel');if(!r||matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+let p=0;for(const e of['mouseenter','focusin','touchstart'])r.addEventListener(e,()=>p=1);
+setInterval(()=>{if(p)return;const m=r.scrollWidth-r.clientWidth;r.scrollTo({left:r.scrollLeft>=m-2?0:r.scrollLeft+r.clientWidth,behavior:'smooth'})},3000)})()
+</script>
+<div class="priv" id="priv" role="region" aria-label="Pemberitahuan privasi" hidden><p>Situs ini tidak memakai cookie pelacak. Jika Anda menghubungi kami lewat WhatsApp atau telepon, data Anda (nomor dan isi pesan) kami gunakan hanya untuk membalas permintaan Anda.</p><button class="btn" type="button" id="privok">Mengerti</button></div>
+<script>
+(()=>{const b=document.getElementById('priv');let k;try{k=localStorage.getItem('priv')}catch(e){}
+if(k)return;b.hidden=false;document.getElementById('privok').onclick=()=>{b.hidden=true;try{localStorage.setItem('priv',1)}catch(e){}}})()
+</script>
+</body>
+</html>

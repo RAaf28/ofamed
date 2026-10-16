@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Produk | Ofamed</title>
+<meta name="description" content="PT. Ofafa Duta Medika, distributor alat kesehatan dan perlengkapan rumah sakit di Indonesia.">
+<meta property="og:title" content="Ofamed | PT. Ofafa Duta Medika"><meta property="og:description" content="Distributor alat kesehatan dan perlengkapan rumah sakit di Indonesia."><meta property="og:image" content="img/ofamed.png"><link rel="icon" href="img/ofamed.png">
+<style>
+:root{
+  --navy:#0D3B85; --navy-2:#1A55B5; --red:#C4202B; --red-deep:#9C1620;
+  --white:#fff; --mist:#EDF3FB; --line:#D3DDEC; --ink:#16202F; --muted:#485467;
+  --serif:Georgia,"Times New Roman",serif; --sans:Georgia,"Times New Roman",serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--navy);color:#fff}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.navy :focus-visible{outline-color:#fff}
+a{color:inherit}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:.75rem 1rem;z-index:10}
+.skip:focus{left:1rem;top:1rem}
+
+.util{background:var(--red);color:#fff;font-size:.8125rem}
+.util .wrap{display:flex;justify-content:space-between;gap:1rem;min-height:40px;align-items:center}
+.util a{text-decoration:none;display:inline-flex;align-items:center;min-height:40px}
+.util a:hover{text-decoration:underline}
+
+header.site{border-bottom:1px solid var(--line);background:var(--white);position:sticky;top:0;z-index:5}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:80px}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.1}
+.brand strong{font:600 1.375rem/1.1 var(--serif);color:var(--navy);letter-spacing:-.005em}
+.brand strong i{font-style:normal;color:var(--red)}
+.brand small{font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:.25rem}
+header.site ul{display:flex;list-style:none;padding:0;gap:.25rem}
+header.site ul a{display:inline-flex;align-items:center;min-height:44px;padding-inline:1rem;text-decoration:none;font-weight:500;font-size:.9375rem;color:var(--ink);
+  background:linear-gradient(var(--red),var(--red)) bottom .5rem left 1rem/0 2px no-repeat;transition:background-size .35s var(--ease)}
+header.site ul a:hover,header.site ul a[aria-current]{background-size:calc(100% - 2rem) 2px}
+.btn{display:inline-flex;align-items:center;gap:.6rem;min-height:48px;padding:.8rem 1.6rem;border-radius:2px;background:var(--red);color:#fff;font:600 .9375rem/1 var(--sans);text-decoration:none;
+  border:1.5px solid var(--red);transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease)}
+.btn:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.btn.line{background:transparent;color:var(--navy);border-color:var(--navy)}
+.btn.line:hover{background:var(--navy);color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* hero */
+.hero{padding-block:clamp(3rem,7vw,6rem)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+h1{font:600 clamp(2.75rem,6vw,5rem)/1.04 var(--serif);color:var(--navy);letter-spacing:-.02em;text-wrap:balance}
+.tag{font-size:1.25rem;color:var(--muted);margin-top:1.25rem;max-width:30ch}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.hero .wrap>*{min-width:0}
+.reel{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;aspect-ratio:4/5;align-items:stretch}
+.reel::-webkit-scrollbar{display:none}
+.reel figure{flex:0 0 100%;scroll-snap-align:center;margin:0;display:grid;place-items:center;align-content:center;gap:1.5rem;padding:1.5rem;background:var(--white);border:1px solid var(--line)}
+.reel img{max-width:90%;max-height:70%;width:auto;height:auto;object-fit:contain}
+.reel .dark{background:#000;border-color:#000}.reel .dark img{max-height:100%}
+.reel:focus-visible{outline-offset:-3px}
+.logo{height:44px;width:auto;display:block}
+footer .logo{filter:brightness(0) invert(1)}
+.about{padding-block:clamp(3.5rem,8vw,7rem);background:var(--mist)}
+.about .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2rem,6vw,6rem)}
+.about h2{font:600 clamp(2rem,4.2vw,3.25rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em}
+.about p{color:var(--muted);max-width:60ch}
+.index img{height:56px;width:auto;max-width:70vw;display:block}
+.photo{overflow:hidden;position:relative;padding:0;color:#B9C6DA;font-size:.8125rem;
+  background-image:linear-gradient(#ffffff14 1px,transparent 1px),linear-gradient(90deg,#ffffff14 1px,transparent 1px);background-size:44px 44px}
+.photo::after{z-index:1;content:"";position:absolute;right:0;top:0;width:26%;height:5px;background:var(--red)}
+
+.facts{border-block:1px solid var(--line);background:var(--mist)}
+.facts .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.facts div{padding:1.4rem 1.5rem 1.4rem 0}
+.facts div+div{padding-left:1.5rem;border-left:1px solid var(--line)}
+.facts dt{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.facts dd{font:500 1.1875rem/1.35 var(--serif);color:var(--navy);margin-top:.35rem}
+
+/* intro */
+.intro{padding-block:clamp(3.5rem,8vw,7rem)}
+.intro .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2rem,6vw,6rem);align-items:start}
+.intro h2{font:600 clamp(2rem,4.2vw,3.25rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em;text-wrap:balance}
+.intro p{font-size:1.1875rem;color:var(--muted);max-width:60ch}
+.more{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;margin-top:1.25rem;font-weight:600;color:var(--navy);text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:2px;text-underline-offset:6px}
+.more:hover{color:var(--red)}
+
+/* values: three typographic columns, ruled, no icons */
+.values{background:var(--navy);color:#fff;padding-block:clamp(3rem,6vw,5rem)}
+.values .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.values article{padding-right:2rem}
+.values article+article{padding-left:2rem;border-left:1px solid #4F7CC4}
+.values h3{font:600 clamp(1.75rem,3vw,2.5rem)/1.1 var(--serif);letter-spacing:-.01em}
+.values h3::after{content:"";display:block;width:36px;height:3px;background:var(--red);margin-top:1rem}
+.values p{color:#D5DEEC;margin-top:1.1rem;max-width:34ch}
+
+/* products: a catalogue index */
+.products{padding-block:clamp(3.5rem,8vw,7rem)}
+.products .head{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2rem,6vw,6rem);align-items:end;margin-bottom:2.5rem}
+.products h2{font:600 clamp(2rem,4.2vw,3.25rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em;text-wrap:balance}
+.products .lead{color:var(--muted);max-width:56ch}
+.index{border-top:2px solid var(--navy)}
+.index a{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1.5rem;padding:2rem .5rem;border-bottom:1px solid var(--line);text-decoration:none;
+  transition:background .3s var(--ease),padding .3s var(--ease)}
+.index a:hover{background:var(--mist);padding-inline:1.25rem}
+.index b{display:block;font:600 clamp(1.75rem,3.4vw,2.75rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em}
+.index b i{font-style:normal;color:var(--red)}
+.index small{display:block;color:var(--muted);margin-top:.4rem}
+.index svg{width:30px;height:30px;color:var(--red);transition:transform .35s var(--ease)}
+.index a:hover svg{transform:translateX(6px)}
+.priv{position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:20;max-width:560px;margin-inline:auto;background:var(--navy);color:#fff;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;box-shadow:0 8px 30px #0006}.priv[hidden]{display:none}.priv p{flex:1 1 260px;font-size:.875rem;line-height:1.5}.priv .btn{min-height:44px}
+.todo{font-size:.8125rem;color:var(--muted);margin-top:1rem}
+
+footer{background:var(--navy);color:#fff;border-top:6px solid var(--red);padding-block:clamp(3rem,6vw,4.5rem) 1.25rem}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:3rem}
+footer .brand strong{color:#fff;font-size:1.5rem}footer .brand strong i{color:#FF8A92}footer .brand small{color:#B9C6DA}
+footer h2{font:600 1.125rem/1 var(--serif);margin-bottom:1rem}
+footer p,footer address{font-style:normal;color:#D5DEEC;max-width:40ch}
+footer .brand+p{margin-top:1rem}
+footer a:not(.btn){color:#fff}
+footer .shops{display:flex;flex-wrap:wrap;gap:.75rem}
+footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:#fff;color:var(--navy)}
+.legal{margin-top:3rem;padding-top:1rem;border-top:1px solid #4F7CC4;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.875rem;color:#B9C6DA}
+.legal a{display:inline-flex;align-items:center;min-height:44px;margin-right:1.25rem}
+
+@media (max-width:860px){
+  .util span:first-child{display:none}
+  header.site .wrap{flex-wrap:wrap;gap:0;padding-block:.5rem}header.site ul{flex-wrap:wrap}header.site ul a{padding-inline:.6rem}
+  .hero .wrap,.intro .wrap,.products .head,.fg,.values .wrap,.facts .wrap{grid-template-columns:1fr}
+  .reel{aspect-ratio:16/10}.about .wrap{grid-template-columns:1fr}
+  .facts div,.facts div+div{padding:1rem 0;border-left:0}.facts div+div{border-top:1px solid var(--line)}
+  .values article,.values article+article{padding:1.5rem 0;border-left:0}.values article+article{border-top:1px solid #4F7CC4}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+.cat{padding-block:clamp(2.5rem,6vw,4.5rem)}
+.cat h1{font-size:clamp(2.25rem,4.5vw,3.5rem)}.cat .lead{color:var(--muted);margin-top:.75rem;max-width:60ch}
+.cat label{display:block;margin-top:1.75rem;font-weight:600;color:var(--navy)}
+.cat input{display:block;width:min(100%,420px);min-height:48px;margin-top:.4rem;padding:0 1rem;border:1.5px solid var(--navy);border-radius:2px;font:inherit}
+.grid{list-style:none;padding:0;margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem}
+.card{display:flex;flex-direction:column;gap:.5rem;border:1px solid var(--line);padding:1rem}
+.card[hidden]{display:none}
+.card img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:var(--mist)}
+.card h2{font:600 1.0625rem/1.3 var(--serif);color:var(--navy)}
+.card p{font-size:.875rem;color:var(--muted)}
+.card .btn{margin-top:auto;justify-content:center;white-space:nowrap;padding-inline:1rem}
+.card .alt{display:inline-flex;align-items:center;min-height:44px;font-size:.875rem;color:var(--navy)}
+.sr{position:absolute;left:-9999px}
+#empty{margin-top:2rem;color:var(--muted)}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"PT. Ofafa Duta Medika","alternateName":"Ofamed","url":"https://ofamed.com","logo":"https://ofamed.com/img/ofamed.png","email":"ofafadutamedika@yahoo.com","telephone":"+62218275489","address":{"@type":"PostalAddress","streetAddress":"Ruko Rose Garden 8 No. 18, Grand Galaxy City, Jaka Setia","addressLocality":"Bekasi Selatan","addressRegion":"Jawa Barat","addressCountry":"ID"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+<div class="util"><div class="wrap"><span>Distributor alat kesehatan dan perlengkapan rumah sakit</span><a href="tel:+622182755489">(021) 8275 5489</a></div></div>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="Ofamed, beranda"><img class="logo" src="img/ofamed.png" alt="Ofamed" width="140" height="44"><small>PT. Ofafa Duta Medika</small></a>
+  <nav aria-label="Utama"><ul>
+    <li><a href="index.html">Beranda</a></li><li><a href="produk.html" aria-current="page">Produk</a></li>
+    <li><a href="index.html#tentang">Tentang Kami</a></li><li><a href="#kontak">Kontak</a></li>
+  </ul></nav>
+</div></header>
+
+<main id="main"><section class="cat"><div class="wrap">
+<h1>Produk</h1>
+<p class="lead">Perlengkapan medis dan habis pakai yang tersedia melalui Ofamed. Harga dan ketersediaan, silakan tanyakan lewat WhatsApp.</p>
+<label for="q">Cari produk</label><input id="q" type="search" autocomplete="off">
+<p id="empty" role="status" hidden>Produk tidak ditemukan. Hubungi kami, kami bantu carikan.</p>
+<ul class="grid">
+<li class="card" data-name="plastik klip kecil sedang besar"><img src="img/produk/15323711587.jpg" alt="Plastik Klip kecil sedang besar" width="200" height="200" loading="lazy"><h2>Plastik Klip kecil sedang besar</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Plastik%20Klip%20kecil%20sedang%20besar">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/plastik-klip-kecil-sedang-besar" rel="noopener">Lihat di Tokopedia<span class="sr"> : Plastik Klip kecil sedang besar</span></a></li>
+<li class="card" data-name="ultrafix onemed ( plaster non woven)"><img src="img/produk/14083090126.jpg" alt="Ultrafix OneMed ( Plaster Non Woven)" width="200" height="200" loading="lazy"><h2>Ultrafix OneMed ( Plaster Non Woven)</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Ultrafix%20OneMed%20%28%20Plaster%20Non%20Woven%29">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/ultrafix-onemed-plaster-non-woven" rel="noopener">Lihat di Tokopedia<span class="sr"> : Ultrafix OneMed ( Plaster Non Woven)</span></a></li>
+<li class="card" data-name="kassa kotak hidrofile 16x16 isi 12"><img src="img/produk/12706071867.jpg" alt="Kassa Kotak Hidrofile 16x16 isi 12" width="200" height="200" loading="lazy"><h2>Kassa Kotak Hidrofile 16x16 isi 12</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Kassa%20Kotak%20Hidrofile%2016x16%20isi%2012">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/kassa-kotak-hidrofile-16x16-isi-12" rel="noopener">Lihat di Tokopedia<span class="sr"> : Kassa Kotak Hidrofile 16x16 isi 12</span></a></li>
+<li class="card" data-name="kassa hydrofil"><img src="img/produk/12667182981.jpg" alt="Kassa Hydrofil" width="200" height="200" loading="lazy"><h2>Kassa Hydrofil</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Kassa%20Hydrofil">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/kassa-hydrofil-kassa-verban-verban-5cm-verban-10cm-kasa-kass" rel="noopener">Lihat di Tokopedia<span class="sr"> : Kassa Hydrofil</span></a></li>
+<li class="card" data-name="povidone iodine onemed"><img src="img/produk/12653632116.jpg" alt="Povidone iodine onemed" width="200" height="200" loading="lazy"><h2>Povidone iodine onemed</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Povidone%20iodine%20onemed">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/povidone-iodine-onemed" rel="noopener">Lihat di Tokopedia<span class="sr"> : Povidone iodine onemed</span></a></li>
+<li class="card" data-name="needle ukuran 23g, 25g, 26g, 27g"><img src="img/produk/12652490220.jpg" alt="Needle ukuran 23G, 25G, 26G, 27G" width="200" height="200" loading="lazy"><h2>Needle ukuran 23G, 25G, 26G, 27G</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Needle%20ukuran%2023G%2C%2025G%2C%2026G%2C%2027G">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/needle-ukuran-23g-25g-26g-27g" rel="noopener">Lihat di Tokopedia<span class="sr"> : Needle ukuran 23G, 25G, 26G, 27G</span></a></li>
+<li class="card" data-name="hansaplast kain roll"><img src="img/produk/12655105220.jpg" alt="Hansaplast Kain Roll" width="200" height="200" loading="lazy"><h2>Hansaplast Kain Roll</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Hansaplast%20Kain%20Roll">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/hansaplast-kain-roll" rel="noopener">Lihat di Tokopedia<span class="sr"> : Hansaplast Kain Roll</span></a></li>
+<li class="card" data-name="kasa steril one med 16x16"><img src="img/produk/12654654165.jpg" alt="KASA STERIL One Med 16x16" width="200" height="200" loading="lazy"><h2>KASA STERIL One Med 16x16</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20KASA%20STERIL%20One%20Med%2016x16">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/kasa-steril-one-med-16x16" rel="noopener">Lihat di Tokopedia<span class="sr"> : KASA STERIL One Med 16x16</span></a></li>
+<li class="card" data-name="alkohol swab one swab onemed isi 100"><img src="img/produk/12653573004.jpg" alt="ALKOHOL SWAB ONE SWAB ONEMED ISI 100" width="200" height="200" loading="lazy"><h2>ALKOHOL SWAB ONE SWAB ONEMED ISI 100</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20ALKOHOL%20SWAB%20ONE%20SWAB%20ONEMED%20ISI%20100">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/alkohol-swab-one-swab-onemed-isi-100" rel="noopener">Lihat di Tokopedia<span class="sr"> : ALKOHOL SWAB ONE SWAB ONEMED ISI 100</span></a></li>
+<li class="card" data-name="gea kantong asi pouch 120ml, kantong asi gea asi bayi baby breast mil"><img src="img/produk/12653197689.jpg" alt="GEA KANTONG ASI POUCH 120ml, kantong ASI gea asi bayi baby breast mil" width="200" height="200" loading="lazy"><h2>GEA KANTONG ASI POUCH 120ml, kantong ASI gea asi bayi baby breast mil</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20GEA%20KANTONG%20ASI%20POUCH%20120ml%2C%20kantong%20ASI%20gea%20asi%20bayi%20baby%20breast%20mil">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/gea-kantong-asi-pouch-120ml-kantong-asi-gea-asi-bayi-baby-breast-mil" rel="noopener">Lihat di Tokopedia<span class="sr"> : GEA KANTONG ASI POUCH 120ml, kantong ASI gea asi bayi baby breast mil</span></a></li>
+<li class="card" data-name="kotak p3k mobil"><img src="img/produk/12653020186.jpg" alt="Kotak P3K mobil" width="200" height="200" loading="lazy"><h2>Kotak P3K mobil</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Kotak%20P3K%20mobil">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/kotak-p3k-mobil-kotak-p3k-isi-kotak-p3k-lengkap" rel="noopener">Lihat di Tokopedia<span class="sr"> : Kotak P3K mobil</span></a></li>
+<li class="card" data-name="betadine solution 5 ml betadin"><img src="img/produk/12652853842.jpg" alt="BETADINE SOLUTION 5 ML Betadin" width="200" height="200" loading="lazy"><h2>BETADINE SOLUTION 5 ML Betadin</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20BETADINE%20SOLUTION%205%20ML%20Betadin">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/betadine-solution-5-ml-betadin" rel="noopener">Lihat di Tokopedia<span class="sr"> : BETADINE SOLUTION 5 ML Betadin</span></a></li>
+<li class="card" data-name="blood lancet 28g"><img src="img/produk/12652633941.jpg" alt="Blood Lancet 28G" width="200" height="200" loading="lazy"><h2>Blood Lancet 28G</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Blood%20Lancet%2028G">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/blood-lancet-28g-jarum-kecil-jarum-blood-lancet-28g" rel="noopener">Lihat di Tokopedia<span class="sr"> : Blood Lancet 28G</span></a></li>
+<li class="card" data-name="oxygen mask adult"><img src="img/produk/12648687336.jpg" alt="Oxygen mask adult" width="200" height="200" loading="lazy"><h2>Oxygen mask adult</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Oxygen%20mask%20adult">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/oxygen-mask-adult" rel="noopener">Lihat di Tokopedia<span class="sr"> : Oxygen mask adult</span></a></li>
+<li class="card" data-name="pispot urinal + tutup om"><img src="img/produk/12648228064.jpg" alt="Pispot Urinal + Tutup OM" width="200" height="200" loading="lazy"><h2>Pispot Urinal + Tutup OM</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Pispot%20Urinal%20%2B%20Tutup%20OM">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/pispot-urinal-tutup-om" rel="noopener">Lihat di Tokopedia<span class="sr"> : Pispot Urinal + Tutup OM</span></a></li>
+<li class="card" data-name="micropore"><img src="img/produk/12641394747.jpg" alt="Micropore" width="200" height="200" loading="lazy"><h2>Micropore</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Micropore">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/micropore" rel="noopener">Lihat di Tokopedia<span class="sr"> : Micropore</span></a></li>
+<li class="card" data-name="medicrepe"><img src="img/produk/12641013197.jpg" alt="Medicrepe" width="200" height="200" loading="lazy"><h2>Medicrepe</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Medicrepe">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/medicrepe" rel="noopener">Lihat di Tokopedia<span class="sr"> : Medicrepe</span></a></li>
+<li class="card" data-name="kertas puyer abu abu"><img src="img/produk/12640803552.jpg" alt="Kertas Puyer Abu abu" width="200" height="200" loading="lazy"><h2>Kertas Puyer Abu abu</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Kertas%20Puyer%20Abu%20abu">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/kertas-puyer-abu-abu" rel="noopener">Lihat di Tokopedia<span class="sr"> : Kertas Puyer Abu abu</span></a></li>
+<li class="card" data-name="kapsul kosong"><img src="img/produk/12640549010.jpg" alt="Kapsul Kosong" width="200" height="200" loading="lazy"><h2>Kapsul Kosong</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Kapsul%20Kosong">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/kapsul-kosong-kapsul-obat-kosong-cangkang-kapsul-obat-kosong" rel="noopener">Lihat di Tokopedia<span class="sr"> : Kapsul Kosong</span></a></li>
+<li class="card" data-name="kapas selection"><img src="img/produk/12640407614.jpg" alt="Kapas selection" width="200" height="200" loading="lazy"><h2>Kapas selection</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Kapas%20selection">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/kapas-selection" rel="noopener">Lihat di Tokopedia<span class="sr"> : Kapas selection</span></a></li>
+<li class="card" data-name="kapas cotton ball"><img src="img/produk/12640354976.jpg" alt="Kapas cotton ball" width="200" height="200" loading="lazy"><h2>Kapas cotton ball</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Kapas%20cotton%20ball">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/kapas-cotton-ball" rel="noopener">Lihat di Tokopedia<span class="sr"> : Kapas cotton ball</span></a></li>
+<li class="card" data-name="id band cosmomed gelang identitas pasien"><img src="img/produk/12640275892.jpg" alt="ID BAND Cosmomed Gelang Identitas Pasien" width="200" height="200" loading="lazy"><h2>ID BAND Cosmomed Gelang Identitas Pasien</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20ID%20BAND%20Cosmomed%20Gelang%20Identitas%20Pasien">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/id-band-cosmomed-gelang-identitas-pasien" rel="noopener">Lihat di Tokopedia<span class="sr"> : ID BAND Cosmomed Gelang Identitas Pasien</span></a></li>
+<li class="card" data-name="ice bag onemed"><img src="img/produk/12640136190.jpg" alt="Ice bag onemed" width="200" height="200" loading="lazy"><h2>Ice bag onemed</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Ice%20bag%20onemed">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/ice-bag-onemed" rel="noopener">Lihat di Tokopedia<span class="sr"> : Ice bag onemed</span></a></li>
+<li class="card" data-name="dermafix t"><img src="img/produk/12640103808.jpg" alt="Dermafix t" width="200" height="200" loading="lazy"><h2>Dermafix t</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Dermafix%20t">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/dermafix-t" rel="noopener">Lihat di Tokopedia<span class="sr"> : Dermafix t</span></a></li>
+<li class="card" data-name="cotton bud selection"><img src="img/produk/12639868748.jpg" alt="Cotton bud selection" width="200" height="200" loading="lazy"><h2>Cotton bud selection</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Cotton%20bud%20selection">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/cotton-bud-selection" rel="noopener">Lihat di Tokopedia<span class="sr"> : Cotton bud selection</span></a></li>
+<li class="card" data-name="celana sunat"><img src="img/produk/12639272762.jpg" alt="Celana sunat" width="200" height="200" loading="lazy"><h2>Celana sunat</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Celana%20sunat">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/celana-sunat" rel="noopener">Lihat di Tokopedia<span class="sr"> : Celana sunat</span></a></li>
+<li class="card" data-name="arm sling"><img src="img/produk/12639158712.jpg" alt="Arm sling" width="200" height="200" loading="lazy"><h2>Arm sling</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Arm%20sling">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/arm-sling" rel="noopener">Lihat di Tokopedia<span class="sr"> : Arm sling</span></a></li>
+<li class="card" data-name="infusion set child"><img src="img/produk/12638881237.jpg" alt="Infusion set child" width="200" height="200" loading="lazy"><h2>Infusion set child</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Infusion%20set%20child">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/infusion-set-child" rel="noopener">Lihat di Tokopedia<span class="sr"> : Infusion set child</span></a></li>
+<li class="card" data-name="vaseline swab winner"><img src="img/produk/12638577133.jpg" alt="Vaseline swab winner" width="200" height="200" loading="lazy"><h2>Vaseline swab winner</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Vaseline%20swab%20winner">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/vaseline-swab-winner" rel="noopener">Lihat di Tokopedia<span class="sr"> : Vaseline swab winner</span></a></li>
+<li class="card" data-name="transofix braun"><img src="img/produk/12638482113.jpg" alt="Transofix braun" width="200" height="200" loading="lazy"><h2>Transofix braun</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Transofix%20braun">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/transofix-braun" rel="noopener">Lihat di Tokopedia<span class="sr"> : Transofix braun</span></a></li>
+<li class="card" data-name="tegaderm"><img src="img/produk/12638441159.jpg" alt="Tegaderm" width="200" height="200" loading="lazy"><h2>Tegaderm</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Tegaderm">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/tegaderm" rel="noopener">Lihat di Tokopedia<span class="sr"> : Tegaderm</span></a></li>
+<li class="card" data-name="syiringe"><img src="img/produk/12629507722.jpg" alt="Syiringe" width="200" height="200" loading="lazy"><h2>Syiringe</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Syiringe">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/syiringe" rel="noopener">Lihat di Tokopedia<span class="sr"> : Syiringe</span></a></li>
+<li class="card" data-name="ultrasound gel hexacare"><img src="img/produk/12629235292.jpg" alt="Ultrasound gel hexacare" width="200" height="200" loading="lazy"><h2>Ultrasound gel hexacare</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Ultrasound%20gel%20hexacare">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/ultrasound-gel-hexacare" rel="noopener">Lihat di Tokopedia<span class="sr"> : Ultrasound gel hexacare</span></a></li>
+<li class="card" data-name="povidone iodine 1 liter"><img src="img/produk/12629076412.jpg" alt="Povidone iodine 1 liter" width="200" height="200" loading="lazy"><h2>Povidone iodine 1 liter</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Povidone%20iodine%201%20liter">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/povidone-iodine-1-liter" rel="noopener">Lihat di Tokopedia<span class="sr"> : Povidone iodine 1 liter</span></a></li>
+<li class="card" data-name="onemed h2o2 800ml"><img src="img/produk/12628970379.jpg" alt="Onemed h2o2 800ml" width="200" height="200" loading="lazy"><h2>Onemed h2o2 800ml</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Onemed%20h2o2%20800ml">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/onemed-h2o2-800ml" rel="noopener">Lihat di Tokopedia<span class="sr"> : Onemed h2o2 800ml</span></a></li>
+<li class="card" data-name="onemed alkohol 70% 100ml"><img src="img/produk/12628706154.jpg" alt="Onemed alkohol 70% 100ml" width="200" height="200" loading="lazy"><h2>Onemed alkohol 70% 100ml</h2><p>Hubungi untuk harga</p><a class="btn" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran%20untuk%20Onemed%20alkohol%2070%25%20100ml">Minta Penawaran</a><a class="alt" href="https://tokopedia.com/ofamed/onemed-alkohol-70-100ml" rel="noopener">Lihat di Tokopedia<span class="sr"> : Onemed alkohol 70% 100ml</span></a></li>
+</ul>
+</div></section></main>
+<script>
+const q=document.getElementById('q'),cs=[...document.querySelectorAll('.card')],em=document.getElementById('empty');
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let n=0;for(const c of cs){const h=!c.dataset.name.includes(v);c.hidden=h;n+=!h}em.hidden=n>0});
+</script>
+
+<footer id="kontak" class="navy"><div class="wrap">
+  <div class="fg">
+    <div><a class="brand" href="index.html" aria-label="Ofamed, beranda"><img class="logo" src="img/ofamed.png" alt="Ofamed" width="140" height="44"><small>PT. Ofafa Duta Medika</small></a>
+      <p>Perusahaan alat kesehatan di Indonesia yang mengedepankan kepuasan pelanggan sebagai target utama perusahaan.</p></div>
+    <div><h2>Contact Us</h2><address>Ruko Rose Garden 8/18, Grand Galaxy City, Jaka Setia, Bekasi Selatan, Jawa Barat.<br><br>Telp: <a href="tel:+622182755489">(021) 8275 5489</a><br>HP/WA: <a href="tel:+6282258475758">0822 5847 5758</a><br>Email: <a href="mailto:ofafadutamedika@yahoo.com">ofafadutamedika@yahoo.com</a></address></div>
+    <div><h2>Online Shop</h2><div class="shops"><a class="btn" href="https://www.tokopedia.com/ofamed" rel="noopener">Tokopedia</a><a class="btn line" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran">WhatsApp</a></div></div>
+  </div>
+  <div class="legal"><span>© PT. Ofafa Duta Medika</span><span><a href="index.html">Beranda</a><a href="produk.html">Produk</a><a href="index.html#tentang">Tentang Kami</a></span></div>
+</div></footer>
+<div class="priv" id="priv" role="region" aria-label="Pemberitahuan privasi" hidden><p>Situs ini tidak memakai cookie pelacak. Jika Anda menghubungi kami lewat WhatsApp atau telepon, data Anda (nomor dan isi pesan) kami gunakan hanya untuk membalas permintaan Anda.</p><button class="btn" type="button" id="privok">Mengerti</button></div>
+<script>
+(()=>{const b=document.getElementById('priv');let k;try{k=localStorage.getItem('priv')}catch(e){}
+if(k)return;b.hidden=false;document.getElementById('privok').onclick=()=>{b.hidden=true;try{localStorage.setItem('priv',1)}catch(e){}}})()
+</script>
+</body>
+</html>
