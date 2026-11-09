@@ -16,8 +16,7 @@
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
 body{font-family:var(--sans);color:var(--ink);
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cpath d='M30 26h4v4h4v4h-4v4h-4v-4h-4v-4h4z' fill='%230D3B85' fill-opacity='.05'/%3E%3C/svg%3E"),
-    radial-gradient(900px 500px at 85% 0,#DCE8F8,transparent 70%),radial-gradient(700px 500px at 0 40%,#F3E4E5,transparent 70%),var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+  background:linear-gradient(#ffffffe6,#ffffffe6),url(img/kantor.jpg) center/cover fixed,var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
 ::selection{background:var(--navy);color:#fff}
 :focus-visible{outline:3px solid var(--red);outline-offset:3px}
 .navy :focus-visible{outline-color:#fff}
@@ -62,7 +61,7 @@ h1{font:700 clamp(1.6rem,3.6vw,3.25rem)/1.1 var(--serif);white-space:nowrap;colo
 .reel .dark{background:#000;border-color:#000}.reel .dark img{max-height:100%}
 .reel:focus-visible{outline-offset:-3px}
 .logo{height:44px;width:auto;display:block}
-footer .logo{filter:brightness(0) invert(1)}
+footer .logo{background:#fff;padding:.5rem .75rem;box-sizing:content-box;align-self:flex-start}
 .about{padding-block:clamp(3.5rem,8vw,7rem);background:var(--mist)}
 .about .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2rem,6vw,6rem)}
 .about h2{font:600 clamp(2rem,4.2vw,3.25rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em}
@@ -158,7 +157,7 @@ footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:
   <img class="cdakb" src="img/cdakb.png" alt="Bersertifikat CDAKB, Cara Distribusi Alat Kesehatan yang Baik, Kementerian Kesehatan RI" width="112" height="56">
   <nav aria-label="Utama"><ul>
     <li><a href="index.html" aria-current="page">Beranda</a></li><li><a href="index.html#tentang">Tentang Kami</a></li>
-    <li><a class="ina" href="https://inaproc.id" rel="noopener" aria-label="Inaproc"><i>INA</i>PROC</a></li><li><a href="produk.html">Produk</a></li>
+    <li><a class="ina" href="https://katalog.inaproc.id/ofafa-duta-medika" rel="noopener" aria-label="Inaproc"><i>INA</i>PROC</a></li><li><a href="produk.html">Produk</a></li>
     <li><a href="index.html#aktivitas">Aktivitas</a></li><li><a href="#kontak">Kontak</a></li><li><a href="index.html#pelanggan">Pelanggan</a></li>
   </ul></nav>
 </div></header>
@@ -186,7 +185,7 @@ footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:
 <section class="intro"><div class="wrap">
   <h2>Indonesia's Medical Equipment Distributor</h2>
   <div>
-    <p>PT. Ofafa Duta Medika merupakan perusahaan distributor alat kesehatan di Indonesia yang memiliki visi dan misi yang berintegritas tinggi serta jangkauan global yang dipersembahkan untuk kepuasan pelanggan.</p>
+    <p>PT. Ofafa Duta Medika merupakan principal beberapa merek yang sudah terdaftar di Kementerian Kesehatan dan juga sebagai distributor alat kesehatan.</p>
     <a class="more" href="#tentang">Selengkapnya <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
 </div></section>
@@ -222,7 +221,7 @@ footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:
 <footer id="kontak" class="navy"><div class="wrap">
   <div class="fg">
     <div><a class="brand" href="index.html" aria-label="Ofamed, beranda"><img class="logo" src="img/ofamed.png" alt="Ofamed" width="140" height="44"><small>PT. Ofafa <span class="mk">Duta</span> Medika</small></a>
-      <p>Perusahaan alat kesehatan di Indonesia yang mengedepankan kepuasan pelanggan sebagai target utama perusahaan.</p></div>
+      <p>PT. Ofafa Duta Medika merupakan principal beberapa merek yang sudah terdaftar di Kementerian Kesehatan dan juga sebagai distributor alat kesehatan.</p></div>
     <div><h2>Contact Us</h2><address>Ruko Rose Garden 8/18, Grand Galaxy City, Jaka Setia, Bekasi Selatan, Jawa Barat.<br><br>Telp: <a href="tel:+622182755489">(021) 8275 5489</a><br>HP/WA: <a href="tel:+6282258475758">0822 5847 5758</a><br>Email: <a href="mailto:ofafadutamedika@yahoo.com">ofafadutamedika@yahoo.com</a></address></div>
     <div><h2>Online Shop</h2><div class="shops"><a class="btn" href="https://www.tokopedia.com/ofamed" rel="noopener">Tokopedia</a><a class="btn line" href="https://wa.me/6282258475758?text=Halo%2C%20saya%20ingin%20meminta%20penawaran">WhatsApp</a></div></div>
   </div>
