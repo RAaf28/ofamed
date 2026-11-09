@@ -15,7 +15,9 @@
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+body{font-family:var(--sans);color:var(--ink);
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cpath d='M30 26h4v4h4v4h-4v4h-4v-4h-4v-4h4z' fill='%230D3B85' fill-opacity='.05'/%3E%3C/svg%3E"),
+    radial-gradient(900px 500px at 85% 0,#DCE8F8,transparent 70%),radial-gradient(700px 500px at 0 40%,#F3E4E5,transparent 70%),var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
 ::selection{background:var(--navy);color:#fff}
 :focus-visible{outline:3px solid var(--red);outline-offset:3px}
 .navy :focus-visible{outline-color:#fff}
@@ -35,10 +37,10 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .brand strong{font:600 1.375rem/1.1 var(--serif);color:var(--navy);letter-spacing:-.005em}
 .brand strong i{font-style:normal;color:var(--red)}
 .brand small{font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:.25rem}
-header.site ul{display:flex;list-style:none;padding:0;gap:.25rem}
-header.site ul a{display:inline-flex;align-items:center;min-height:44px;padding-inline:1rem;text-decoration:none;font-weight:500;font-size:.9375rem;color:var(--ink);
-  background:linear-gradient(var(--red),var(--red)) bottom .5rem left 1rem/0 2px no-repeat;transition:background-size .35s var(--ease)}
-header.site ul a:hover,header.site ul a[aria-current]{background-size:calc(100% - 2rem) 2px}
+header.site ul{display:flex;list-style:none;padding:0;gap:0}
+header.site ul a{display:inline-flex;align-items:center;min-height:44px;padding-inline:.7rem;text-decoration:none;font-weight:500;font-size:.9375rem;color:var(--ink);white-space:nowrap;
+  background:linear-gradient(var(--red),var(--red)) bottom .5rem left .7rem/0 2px no-repeat;transition:background-size .35s var(--ease)}
+header.site ul a:hover,header.site ul a[aria-current]{background-size:calc(100% - 1.4rem) 2px}
 .btn{display:inline-flex;align-items:center;gap:.6rem;min-height:48px;padding:.8rem 1.6rem;border-radius:2px;background:var(--red);color:#fff;font:600 .9375rem/1 var(--sans);text-decoration:none;
   border:1.5px solid var(--red);transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease)}
 .btn:hover{background:var(--red-deep);border-color:var(--red-deep)}
@@ -81,6 +83,14 @@ footer .logo{filter:brightness(0) invert(1)}
 .facts dt{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .facts dd{font:500 1.1875rem/1.35 var(--serif);color:var(--navy);margin-top:.35rem}
 
+.clients{padding-block:clamp(3.5rem,8vw,7rem);background:var(--mist)}
+.clients h2{font:600 clamp(2rem,4.2vw,3.25rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em}
+.clients .lead{color:var(--muted);margin-top:.75rem;max-width:56ch}
+.logos{list-style:none;padding:0;margin-top:2.5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem}
+.logos li{display:grid;place-items:center;min-height:110px;padding:1rem;background:#fff;border:1px solid var(--line)}
+.logos img{max-width:100%;max-height:80px;width:auto;height:auto;object-fit:contain}
+header.site ul a.ina{font:800 1rem/1 var(--serif);letter-spacing:.01em;color:#111}header.site ul a.ina i{font-style:normal;color:#D6252B}
+
 /* intro */
 .intro{padding-block:clamp(3.5rem,8vw,7rem)}
 .intro .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2rem,6vw,6rem);align-items:start}
@@ -109,6 +119,7 @@ footer .logo{filter:brightness(0) invert(1)}
 .index a:hover{background:var(--mist);padding-inline:1.25rem}
 .index b{display:block;font:600 clamp(1.75rem,3.4vw,2.75rem)/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em}
 .index b i{font-style:normal;color:var(--red)}
+.index .dark{background:#000;padding:.4rem 1rem}
 .index small{display:block;color:var(--muted);margin-top:.4rem}
 .index svg{width:30px;height:30px;color:var(--red);transition:transform .35s var(--ease)}
 .index a:hover svg{transform:translateX(6px)}
@@ -146,12 +157,14 @@ footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:
   <a class="brand" href="index.html" aria-label="Ofamed, beranda"><img class="logo" src="img/ofamed.png" alt="Ofamed" width="140" height="44"><small>PT. Ofafa <span class="mk">Duta</span> Medika</small></a>
   <img class="cdakb" src="img/cdakb.png" alt="Bersertifikat CDAKB, Cara Distribusi Alat Kesehatan yang Baik, Kementerian Kesehatan RI" width="112" height="56">
   <nav aria-label="Utama"><ul>
-    <li><a href="index.html" aria-current="page">Beranda</a></li><li><a href="produk.html">Produk</a></li>
-    <li><a href="index.html#tentang">Tentang Kami</a></li><li><a href="#kontak">Kontak</a></li>
+    <li><a href="index.html" aria-current="page">Beranda</a></li><li><a href="index.html#tentang">Tentang Kami</a></li>
+    <li><a class="ina" href="https://inaproc.id" rel="noopener" aria-label="Inaproc"><i>INA</i>PROC</a></li><li><a href="produk.html">Produk</a></li>
+    <li><a href="index.html#aktivitas">Aktivitas</a></li><li><a href="#kontak">Kontak</a></li><li><a href="index.html#pelanggan">Pelanggan</a></li>
   </ul></nav>
 </div></header>
 
 <main id="main">
+<div class="wrap" style="position:relative;height:0"><img src="img/ofacare.png" alt="Ofacare" height="260" style="position:absolute;top:1rem;left:min(140px,8vw);width:min(340px,100% - min(140px,8vw));height:auto;z-index:1"></div>
 <section class="hero"><div class="wrap">
   <div>
     <h1>PT. Ofafa <span class="mk">Duta</span> Medika</h1>
@@ -193,21 +206,16 @@ footer .btn.line{color:#fff;border-color:#fff}footer .btn.line:hover{background:
     <h3>Visi</h3><p>Menjadikan PT. Ofafa Duta Medika sebagai salah satu penyedia alat kesehatan yang profesional dengan mengedepankan pelayanan dan kualitas produk yang terbaik.</p>
     <h3>Misi</h3><ul><li>Ikut berkontribusi dalam menyehatkan bangsa.</li><li>Secara konsisten menyediakan alat kesehatan yang berkualitas, lengkap, dengan harga yang rasional.</li><li>Membangun komunikasi yang berkelanjutan untuk memberikan solusi lengkap kebutuhan bagi pelanggan.</li><li>Memprioritaskan kepuasan pelanggan yang prima dan tumbuh bersama.</li></ul>
   </div>
-  <div class="shots" style="grid-column:1/-1">
+  <div class="shots" id="aktivitas" style="grid-column:1/-1">
     <img src="img/foto-kasa-lipat.jpg" alt="Petugas medis menunjukkan kemasan Ofamed Kasa Lipat" width="800" height="530" loading="lazy">
     <img src="img/foto-ofahusada-box.jpg" alt="Petugas apotek memegang kotak Ofahusada Kassa Hydrophile isi 12 lembar" width="800" height="800" loading="lazy">
     <img src="img/foto-ofahusada-roll.jpg" alt="Petugas medis menunjukkan kemasan Ofahusada Kasa Hydrophile 5 cm" width="800" height="530" loading="lazy">
   </div>
 </div></section>
-<section class="products" id="produk"><div class="wrap">
-  <div class="head">
-    <h2>Exclusive Product by Ofamed</h2>
-    <p class="lead">Produk kami dikembangkan dengan kualitas tinggi dengan berbagai jenis dan kategori unggulan yang diciptakan untuk kepuasan pelanggan.</p>
-  </div>
-  <div class="index">
-    <a href="produk.html"><span><img src="img/ofamed.png" alt="Ofamed" width="160" height="50"><small>Lihat produk</small></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    <a href="produk.html"><span><img src="img/ofahusada.png" alt="Ofahusada" width="200" height="56"><small>Lihat produk</small></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-  </div>
+<section class="clients" id="pelanggan"><div class="wrap">
+  <h2>Pelanggan Kami</h2>
+  <p class="lead">Rumah sakit, dinas, dan klinik yang telah mempercayakan kebutuhan alat kesehatannya kepada kami.</p>
+  <ul class="logos"><li><img src="img/pelanggan/01.png" alt="RS Pertamina Jaya" width="398" height="187" loading="lazy"></li><li><img src="img/pelanggan/02.png" alt="Primaya Hospital" width="306" height="87" loading="lazy"></li><li><img src="img/pelanggan/03.png" alt="RS Mary Cileungsi Hijau" width="387" height="154" loading="lazy"></li><li><img src="img/pelanggan/04.png" alt="RS Ridhoka Salma" width="404" height="136" loading="lazy"></li><li><img src="img/pelanggan/05.png" alt="RSIA Gizar" width="443" height="151" loading="lazy"></li><li><img src="img/pelanggan/06.png" alt="RS Gandaria" width="383" height="136" loading="lazy"></li><li><img src="img/pelanggan/07.png" alt="RSK Bedah Bina Estetika" width="234" height="235" loading="lazy"></li><li><img src="img/pelanggan/08.png" alt="Menteng Mitra Afia" width="213" height="225" loading="lazy"></li><li><img src="img/pelanggan/09.png" alt="RS Asri Medika" width="162" height="166" loading="lazy"></li><li><img src="img/pelanggan/10.png" alt="RS Haji Jakarta" width="231" height="161" loading="lazy"></li><li><img src="img/pelanggan/11.png" alt="RSKIA Harapan Bunda Bandung" width="575" height="161" loading="lazy"></li><li><img src="img/pelanggan/12.png" alt="RSUD Cileungsi" width="174" height="175" loading="lazy"></li><li><img src="img/pelanggan/13.png" alt="RS Bunda" width="175" height="111" loading="lazy"></li><li><img src="img/pelanggan/14.png" alt="RS Cikarang Medika" width="383" height="90" loading="lazy"></li><li><img src="img/pelanggan/15.png" alt="RS Ketergantungan Obat Jakarta" width="409" height="156" loading="lazy"></li><li><img src="img/pelanggan/16.png" alt="RS Sentra Medika Cikarang" width="415" height="121" loading="lazy"></li><li><img src="img/pelanggan/17.png" alt="RSUD Karawang" width="244" height="119" loading="lazy"></li><li><img src="img/pelanggan/18.png" alt="RS Delima Asih" width="382" height="87" loading="lazy"></li><li><img src="img/pelanggan/19.png" alt="RSUD Rengasdengklok" width="213" height="210" loading="lazy"></li><li><img src="img/pelanggan/20.png" alt="RSUD Tebet" width="243" height="207" loading="lazy"></li><li><img src="img/pelanggan/21.png" alt="RS Dewi Sri" width="238" height="199" loading="lazy"></li><li><img src="img/pelanggan/22.png" alt="RS Adhyaksa Jakarta" width="174" height="232" loading="lazy"></li><li><img src="img/pelanggan/23.png" alt="RSUD Ciracas" width="236" height="238" loading="lazy"></li><li><img src="img/pelanggan/24.png" alt="RSUD Kota Depok" width="216" height="231" loading="lazy"></li><li><img src="img/pelanggan/25.png" alt="RSUD Kota Bogor" width="224" height="224" loading="lazy"></li><li><img src="img/pelanggan/26.png" alt="RSUP Dr. Sardjito" width="250" height="194" loading="lazy"></li><li><img src="img/pelanggan/27.png" alt="RSUP Persahabatan" width="262" height="180" loading="lazy"></li><li><img src="img/pelanggan/28.png" alt="Dinkes Kab. Karawang" width="184" height="199" loading="lazy"></li><li><img src="img/pelanggan/29.png" alt="Dinkes Halmahera Timur" width="585" height="143" loading="lazy"></li><li><img src="img/pelanggan/30.png" alt="Dinkes Halmahera Tengah" width="226" height="290" loading="lazy"></li><li><img src="img/pelanggan/31.png" alt="Dinkes Pulau Morotai" width="476" height="274" loading="lazy"></li><li><img src="img/pelanggan/32.png" alt="Balai Besar Labkes Jakarta" width="214" height="133" loading="lazy"></li><li><img src="img/pelanggan/33.png" alt="Puskesmas Adiarsa" width="213" height="213" loading="lazy"></li><li><img src="img/pelanggan/34.png" alt="RS Islam Karawang" width="169" height="175" loading="lazy"></li><li><img src="img/pelanggan/35.png" alt="Puskesmas Kelapa Gading" width="210" height="208" loading="lazy"></li><li><img src="img/pelanggan/36.png" alt="Puskesmas Klari" width="258" height="292" loading="lazy"></li><li><img src="img/pelanggan/37.png" alt="Puskesmas Purwasari" width="275" height="275" loading="lazy"></li><li><img src="img/pelanggan/38.png" alt="Puskesmas Telukjambe" width="261" height="263" loading="lazy"></li><li><img src="img/pelanggan/39.png" alt="Puskesmas Cakung" width="286" height="242" loading="lazy"></li><li><img src="img/pelanggan/40.png" alt="RS Karya Medika Bekasi" width="282" height="282" loading="lazy"></li><li><img src="img/pelanggan/41.png" alt="Cempaka Medical Center" width="330" height="212" loading="lazy"></li><li><img src="img/pelanggan/42.png" alt="Klinik Diana Medika" width="336" height="165" loading="lazy"></li><li><img src="img/pelanggan/43.png" alt="RS Permata Gunung Putri" width="676" height="167" loading="lazy"></li></ul>
 </div></section>
 </main>
 

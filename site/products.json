@@ -1,282 +1,354 @@
 [
- {
-  "id": "ofamed-kasa-lipat-xray-rb",
-  "name": "Ofamed Kasa Lipat X-Ray RB",
-  "url": null,
-  "price": null,
-  "img": "img/produk/ofamed-kasa-lipat-xray-rb.jpg"
- },
- {
-  "id": "kasa-big-gauze",
-  "name": "Ofamed Kasa Big Gauze X-Ray",
-  "url": null,
-  "price": null,
-  "img": "img/produk/kasa-big-gauze.jpg"
- },
- {
-  "id": "kasa-lipat-7-5",
-  "name": "Ofamed Kasa Lipat 7,5 cm x 7,5 cm",
-  "url": null,
-  "price": null,
-  "img": "img/produk/kasa-lipat-7-5.jpg"
- },
- {
-  "id": "ofahusada-kasa-roll-40x80",
-  "name": "Ofahusada Kasa Roll 40 x 80",
-  "url": null,
-  "price": null,
-  "img": "img/produk/ofahusada-kasa-roll-40x80.jpg"
- },
- {
-  "id": "15323711587",
-  "name": "Plastik Klip kecil sedang besar",
-  "url": "https://tokopedia.com/ofamed/plastik-klip-kecil-sedang-besar",
-  "price": "Rp 40.000",
-  "img": "img/produk/15323711587.jpg"
- },
- {
-  "id": "14083090126",
-  "name": "Ultrafix OneMed ( Plaster Non Woven)",
-  "url": "https://tokopedia.com/ofamed/ultrafix-onemed-plaster-non-woven",
-  "price": "Rp 25.000",
-  "img": "img/produk/14083090126.jpg"
- },
- {
-  "id": "12706071867",
-  "name": "Kassa Kotak Hidrofile 16x16 isi 12",
-  "url": "https://tokopedia.com/ofamed/kassa-kotak-hidrofile-16x16-isi-12",
-  "price": "Rp 2.250",
-  "img": "img/produk/12706071867.jpg"
- },
- {
-  "id": "12667182981",
-  "name": "Kassa Hydrofil / Kassa Verban / Verban 5cm / Verban 10cm / Kasa / Kass",
-  "url": "https://tokopedia.com/ofamed/kassa-hydrofil-kassa-verban-verban-5cm-verban-10cm-kasa-kass",
-  "price": "Rp 3.600",
-  "img": "img/produk/12667182981.jpg"
- },
- {
-  "id": "12653632116",
-  "name": "povidone iodine onemed",
-  "url": "https://tokopedia.com/ofamed/povidone-iodine-onemed",
-  "price": "Rp 7.658",
-  "img": "img/produk/12653632116.jpg"
- },
- {
-  "id": "12652490220",
-  "name": "Needle ukuran 23G, 25G, 26G, 27G",
-  "url": "https://tokopedia.com/ofamed/needle-ukuran-23g-25g-26g-27g",
-  "price": "Rp 1.802",
-  "img": "img/produk/12652490220.jpg"
- },
- {
-  "id": "12655105220",
-  "name": "Hansaplast Kain Roll",
-  "url": "https://tokopedia.com/ofamed/hansaplast-kain-roll",
-  "price": "Rp 90.090",
-  "img": "img/produk/12655105220.jpg"
- },
- {
-  "id": "12654654165",
-  "name": "KASA STERIL One Med 16x16",
-  "url": "https://tokopedia.com/ofamed/kasa-steril-one-med-16x16",
-  "price": "Rp 5.450",
-  "img": "img/produk/12654654165.jpg"
- },
- {
-  "id": "12653573004",
-  "name": "ALKOHOL SWAB ONE SWAB ONEMED ISI 100",
-  "url": "https://tokopedia.com/ofamed/alkohol-swab-one-swab-onemed-isi-100",
-  "price": "Rp 9.000",
-  "img": "img/produk/12653573004.jpg"
- },
- {
-  "id": "12653197689",
-  "name": "GEA KANTONG ASI POUCH 120ml, kantong ASI gea asi bayi baby breast mil",
-  "url": "https://tokopedia.com/ofamed/gea-kantong-asi-pouch-120ml-kantong-asi-gea-asi-bayi-baby-breast-mil",
-  "price": "Rp 24.000",
-  "img": "img/produk/12653197689.jpg"
- },
- {
-  "id": "12653020186",
-  "name": "Kotak P3K mobil/Kotak P3K isi/Kotak P3K Lengkap",
-  "url": "https://tokopedia.com/ofamed/kotak-p3k-mobil-kotak-p3k-isi-kotak-p3k-lengkap",
-  "price": "Rp 27.500",
-  "img": "img/produk/12653020186.jpg"
- },
- {
-  "id": "12652853842",
-  "name": "BETADINE SOLUTION 5 ML Betadin",
-  "url": "https://tokopedia.com/ofamed/betadine-solution-5-ml-betadin",
-  "price": "Rp 7.658",
-  "img": "img/produk/12652853842.jpg"
- },
- {
-  "id": "12652633941",
-  "name": "Blood Lancet 28G / Jarum Kecil / Jarum Blood Lancet 28G",
-  "url": "https://tokopedia.com/ofamed/blood-lancet-28g-jarum-kecil-jarum-blood-lancet-28g",
-  "price": "Rp 12.568",
-  "img": "img/produk/12652633941.jpg"
- },
- {
-  "id": "12648687336",
-  "name": "Oxygen mask adult",
-  "url": "https://tokopedia.com/ofamed/oxygen-mask-adult",
-  "price": "Rp 2.500",
-  "img": "img/produk/12648687336.jpg"
- },
- {
-  "id": "12648228064",
-  "name": " Pispot Urinal + Tutup OM",
-  "url": "https://tokopedia.com/ofamed/pispot-urinal-tutup-om",
-  "price": "Rp 11.261",
-  "img": "img/produk/12648228064.jpg"
- },
- {
-  "id": "12641394747",
-  "name": "micropore",
-  "url": "https://tokopedia.com/ofamed/micropore",
-  "price": "Rp 8.408",
-  "img": "img/produk/12641394747.jpg"
- },
- {
-  "id": "12641013197",
-  "name": "medicrepe",
-  "url": "https://tokopedia.com/ofamed/medicrepe",
-  "price": "Rp 12.613",
-  "img": "img/produk/12641013197.jpg"
- },
- {
-  "id": "12640803552",
-  "name": "Kertas Puyer Abu abu",
-  "url": "https://tokopedia.com/ofamed/kertas-puyer-abu-abu",
-  "price": "Rp 7.207",
-  "img": "img/produk/12640803552.jpg"
- },
- {
-  "id": "12640549010",
-  "name": "Kapsul Kosong | Kapsul Obat Kosong | Cangkang Kapsul Obat Kosong",
-  "url": "https://tokopedia.com/ofamed/kapsul-kosong-kapsul-obat-kosong-cangkang-kapsul-obat-kosong",
-  "price": "Rp 49.550",
-  "img": "img/produk/12640549010.jpg"
- },
- {
-  "id": "12640407614",
-  "name": "kapas selection",
-  "url": "https://tokopedia.com/ofamed/kapas-selection",
-  "price": "Rp 6.757",
-  "img": "img/produk/12640407614.jpg"
- },
- {
-  "id": "12640354976",
-  "name": "kapas cotton ball",
-  "url": "https://tokopedia.com/ofamed/kapas-cotton-ball",
-  "price": "Rp 11.486",
-  "img": "img/produk/12640354976.jpg"
- },
- {
-  "id": "12640275892",
-  "name": "ID BAND Cosmomed Gelang Identitas Pasien",
-  "url": "https://tokopedia.com/ofamed/id-band-cosmomed-gelang-identitas-pasien",
-  "price": "Rp 85.586",
-  "img": "img/produk/12640275892.jpg"
- },
- {
-  "id": "12640136190",
-  "name": "ice bag onemed",
-  "url": "https://tokopedia.com/ofamed/ice-bag-onemed",
-  "price": "Rp 29.730",
-  "img": "img/produk/12640136190.jpg"
- },
- {
-  "id": "12640103808",
-  "name": "dermafix t",
-  "url": "https://tokopedia.com/ofamed/dermafix-t",
-  "price": "Rp 45.949",
-  "img": "img/produk/12640103808.jpg"
- },
- {
-  "id": "12639868748",
-  "name": "cotton bud selection",
-  "url": "https://tokopedia.com/ofamed/cotton-bud-selection",
-  "price": "Rp 10.631",
-  "img": "img/produk/12639868748.jpg"
- },
- {
-  "id": "12639272762",
-  "name": "celana sunat",
-  "url": "https://tokopedia.com/ofamed/celana-sunat",
-  "price": "Rp 9.000",
-  "img": "img/produk/12639272762.jpg"
- },
- {
-  "id": "12639158712",
-  "name": "arm sling",
-  "url": "https://tokopedia.com/ofamed/arm-sling",
-  "price": "Rp 26.126",
-  "img": "img/produk/12639158712.jpg"
- },
- {
-  "id": "12638881237",
-  "name": "infusion set child",
-  "url": "https://tokopedia.com/ofamed/infusion-set-child",
-  "price": "Rp 5.405",
-  "img": "img/produk/12638881237.jpg"
- },
- {
-  "id": "12638577133",
-  "name": "vaseline swab winner",
-  "url": "https://tokopedia.com/ofamed/vaseline-swab-winner",
-  "price": "Rp 63.063",
-  "img": "img/produk/12638577133.jpg"
- },
- {
-  "id": "12638482113",
-  "name": "transofix braun",
-  "url": "https://tokopedia.com/ofamed/transofix-braun",
-  "price": "Rp 7.658",
-  "img": "img/produk/12638482113.jpg"
- },
- {
-  "id": "12638441159",
-  "name": "tegaderm",
-  "url": "https://tokopedia.com/ofamed/tegaderm",
-  "price": "Rp 6.820",
-  "img": "img/produk/12638441159.jpg"
- },
- {
-  "id": "12629507722",
-  "name": "syiringe",
-  "url": "https://tokopedia.com/ofamed/syiringe",
-  "price": "Rp 721",
-  "img": "img/produk/12629507722.jpg"
- },
- {
-  "id": "12629235292",
-  "name": "ultrasound gel hexacare",
-  "url": "https://tokopedia.com/ofamed/ultrasound-gel-hexacare",
-  "price": "Rp 12.000",
-  "img": "img/produk/12629235292.jpg"
- },
- {
-  "id": "12629076412",
-  "name": "povidone iodine 1 liter",
-  "url": "https://tokopedia.com/ofamed/povidone-iodine-1-liter",
-  "price": "Rp 87.387",
-  "img": "img/produk/12629076412.jpg"
- },
- {
-  "id": "12628970379",
-  "name": "onemed h2o2 800ml",
-  "url": "https://tokopedia.com/ofamed/onemed-h2o2-800ml",
-  "price": "Rp 45.000",
-  "img": "img/produk/12628970379.jpg"
- },
- {
-  "id": "12628706154",
-  "name": "onemed alkohol 70% 100ml",
-  "url": "https://tokopedia.com/ofamed/onemed-alkohol-70-100ml",
-  "price": "Rp 4.000",
-  "img": "img/produk/12628706154.jpg"
- }
+  {
+    "id": "ofamed-kasa-lipat-xray-rb",
+    "name": "Ofamed Kasa Lipat X-Ray RB",
+    "url": null,
+    "price": null,
+    "img": "img/produk/ofamed-kasa-lipat-xray-rb.jpg",
+    "cat": "ofamed"
+  },
+  {
+    "id": "kasa-big-gauze",
+    "name": "Ofamed Kasa Big Gauze X-Ray",
+    "url": null,
+    "price": null,
+    "img": "img/produk/kasa-big-gauze.jpg",
+    "cat": "ofamed"
+  },
+  {
+    "id": "kasa-lipat-7-5",
+    "name": "Ofamed Kasa Lipat 7,5 cm x 7,5 cm",
+    "url": null,
+    "price": null,
+    "img": "img/produk/kasa-lipat-7-5.jpg",
+    "cat": "ofamed"
+  },
+  {
+    "id": "ofahusada-kasa-roll-40x80",
+    "name": "Ofahusada Kasa Roll 40 x 80",
+    "url": null,
+    "price": null,
+    "img": "img/produk/ofahusada-kasa-roll-40x80.jpg",
+    "cat": "ofahusada"
+  },
+  {
+    "id": "15323711587",
+    "name": "Plastik Klip kecil sedang besar",
+    "url": "https://tokopedia.com/ofamed/plastik-klip-kecil-sedang-besar",
+    "price": "Rp 40.000",
+    "img": "img/produk/15323711587.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "14083090126",
+    "name": "Ultrafix OneMed ( Plaster Non Woven)",
+    "url": "https://tokopedia.com/ofamed/ultrafix-onemed-plaster-non-woven",
+    "price": "Rp 25.000",
+    "img": "img/produk/14083090126.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12706071867",
+    "name": "Kassa Kotak Hidrofile 16x16 isi 12",
+    "url": "https://tokopedia.com/ofamed/kassa-kotak-hidrofile-16x16-isi-12",
+    "price": "Rp 2.250",
+    "img": "img/produk/12706071867.jpg",
+    "cat": "ofahusada"
+  },
+  {
+    "id": "12667182981",
+    "name": "Kassa Hydrofil / Kassa Verban / Verban 5cm / Verban 10cm / Kasa / Kass",
+    "url": "https://tokopedia.com/ofamed/kassa-hydrofil-kassa-verban-verban-5cm-verban-10cm-kasa-kass",
+    "price": "Rp 3.600",
+    "img": "img/produk/12667182981.jpg",
+    "cat": "ofahusada"
+  },
+  {
+    "id": "12653632116",
+    "name": "povidone iodine onemed",
+    "url": "https://tokopedia.com/ofamed/povidone-iodine-onemed",
+    "price": "Rp 7.658",
+    "img": "img/produk/12653632116.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12652490220",
+    "name": "Needle ukuran 23G, 25G, 26G, 27G",
+    "url": "https://tokopedia.com/ofamed/needle-ukuran-23g-25g-26g-27g",
+    "price": "Rp 1.802",
+    "img": "img/produk/12652490220.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12655105220",
+    "name": "Hansaplast Kain Roll",
+    "url": "https://tokopedia.com/ofamed/hansaplast-kain-roll",
+    "price": "Rp 90.090",
+    "img": "img/produk/12655105220.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12654654165",
+    "name": "KASA STERIL One Med 16x16",
+    "url": "https://tokopedia.com/ofamed/kasa-steril-one-med-16x16",
+    "price": "Rp 5.450",
+    "img": "img/produk/12654654165.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12653573004",
+    "name": "ALKOHOL SWAB ONE SWAB ONEMED ISI 100",
+    "url": "https://tokopedia.com/ofamed/alkohol-swab-one-swab-onemed-isi-100",
+    "price": "Rp 9.000",
+    "img": "img/produk/12653573004.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12653197689",
+    "name": "GEA KANTONG ASI POUCH 120ml, kantong ASI gea asi bayi baby breast mil",
+    "url": "https://tokopedia.com/ofamed/gea-kantong-asi-pouch-120ml-kantong-asi-gea-asi-bayi-baby-breast-mil",
+    "price": "Rp 24.000",
+    "img": "img/produk/12653197689.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12653020186",
+    "name": "Kotak P3K mobil/Kotak P3K isi/Kotak P3K Lengkap",
+    "url": "https://tokopedia.com/ofamed/kotak-p3k-mobil-kotak-p3k-isi-kotak-p3k-lengkap",
+    "price": "Rp 27.500",
+    "img": "img/produk/12653020186.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12652853842",
+    "name": "BETADINE SOLUTION 5 ML Betadin",
+    "url": "https://tokopedia.com/ofamed/betadine-solution-5-ml-betadin",
+    "price": "Rp 7.658",
+    "img": "img/produk/12652853842.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12652633941",
+    "name": "Blood Lancet 28G / Jarum Kecil / Jarum Blood Lancet 28G",
+    "url": "https://tokopedia.com/ofamed/blood-lancet-28g-jarum-kecil-jarum-blood-lancet-28g",
+    "price": "Rp 12.568",
+    "img": "img/produk/12652633941.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12648687336",
+    "name": "Oxygen mask adult",
+    "url": "https://tokopedia.com/ofamed/oxygen-mask-adult",
+    "price": "Rp 2.500",
+    "img": "img/produk/12648687336.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12648228064",
+    "name": " Pispot Urinal + Tutup OM",
+    "url": "https://tokopedia.com/ofamed/pispot-urinal-tutup-om",
+    "price": "Rp 11.261",
+    "img": "img/produk/12648228064.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12641394747",
+    "name": "micropore",
+    "url": "https://tokopedia.com/ofamed/micropore",
+    "price": "Rp 8.408",
+    "img": "img/produk/12641394747.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12641013197",
+    "name": "medicrepe",
+    "url": "https://tokopedia.com/ofamed/medicrepe",
+    "price": "Rp 12.613",
+    "img": "img/produk/12641013197.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12640803552",
+    "name": "Kertas Puyer Abu abu",
+    "url": "https://tokopedia.com/ofamed/kertas-puyer-abu-abu",
+    "price": "Rp 7.207",
+    "img": "img/produk/12640803552.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12640549010",
+    "name": "Kapsul Kosong | Kapsul Obat Kosong | Cangkang Kapsul Obat Kosong",
+    "url": "https://tokopedia.com/ofamed/kapsul-kosong-kapsul-obat-kosong-cangkang-kapsul-obat-kosong",
+    "price": "Rp 49.550",
+    "img": "img/produk/12640549010.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12640407614",
+    "name": "kapas selection",
+    "url": "https://tokopedia.com/ofamed/kapas-selection",
+    "price": "Rp 6.757",
+    "img": "img/produk/12640407614.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12640354976",
+    "name": "kapas cotton ball",
+    "url": "https://tokopedia.com/ofamed/kapas-cotton-ball",
+    "price": "Rp 11.486",
+    "img": "img/produk/12640354976.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12640275892",
+    "name": "ID BAND Cosmomed Gelang Identitas Pasien",
+    "url": "https://tokopedia.com/ofamed/id-band-cosmomed-gelang-identitas-pasien",
+    "price": "Rp 85.586",
+    "img": "img/produk/12640275892.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12640136190",
+    "name": "ice bag onemed",
+    "url": "https://tokopedia.com/ofamed/ice-bag-onemed",
+    "price": "Rp 29.730",
+    "img": "img/produk/12640136190.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12640103808",
+    "name": "dermafix t",
+    "url": "https://tokopedia.com/ofamed/dermafix-t",
+    "price": "Rp 45.949",
+    "img": "img/produk/12640103808.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12639868748",
+    "name": "cotton bud selection",
+    "url": "https://tokopedia.com/ofamed/cotton-bud-selection",
+    "price": "Rp 10.631",
+    "img": "img/produk/12639868748.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12639272762",
+    "name": "celana sunat",
+    "url": "https://tokopedia.com/ofamed/celana-sunat",
+    "price": "Rp 9.000",
+    "img": "img/produk/12639272762.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12639158712",
+    "name": "arm sling",
+    "url": "https://tokopedia.com/ofamed/arm-sling",
+    "price": "Rp 26.126",
+    "img": "img/produk/12639158712.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12638881237",
+    "name": "infusion set child",
+    "url": "https://tokopedia.com/ofamed/infusion-set-child",
+    "price": "Rp 5.405",
+    "img": "img/produk/12638881237.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12638577133",
+    "name": "vaseline swab winner",
+    "url": "https://tokopedia.com/ofamed/vaseline-swab-winner",
+    "price": "Rp 63.063",
+    "img": "img/produk/12638577133.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12638482113",
+    "name": "transofix braun",
+    "url": "https://tokopedia.com/ofamed/transofix-braun",
+    "price": "Rp 7.658",
+    "img": "img/produk/12638482113.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12638441159",
+    "name": "tegaderm",
+    "url": "https://tokopedia.com/ofamed/tegaderm",
+    "price": "Rp 6.820",
+    "img": "img/produk/12638441159.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12629507722",
+    "name": "syiringe",
+    "url": "https://tokopedia.com/ofamed/syiringe",
+    "price": "Rp 721",
+    "img": "img/produk/12629507722.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12629235292",
+    "name": "ultrasound gel hexacare",
+    "url": "https://tokopedia.com/ofamed/ultrasound-gel-hexacare",
+    "price": "Rp 12.000",
+    "img": "img/produk/12629235292.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12629076412",
+    "name": "povidone iodine 1 liter",
+    "url": "https://tokopedia.com/ofamed/povidone-iodine-1-liter",
+    "price": "Rp 87.387",
+    "img": "img/produk/12629076412.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12628970379",
+    "name": "onemed h2o2 800ml",
+    "url": "https://tokopedia.com/ofamed/onemed-h2o2-800ml",
+    "price": "Rp 45.000",
+    "img": "img/produk/12628970379.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "12628706154",
+    "name": "onemed alkohol 70% 100ml",
+    "url": "https://tokopedia.com/ofamed/onemed-alkohol-70-100ml",
+    "price": "Rp 4.000",
+    "img": "img/produk/12628706154.jpg",
+    "cat": "habis"
+  },
+  {
+    "id": "ofamed-kasa-steril",
+    "name": "Ofamed Kasa Steril",
+    "url": null,
+    "price": null,
+    "img": "img/produk/ofamed-kasa-steril.jpg",
+    "cat": "ofamed"
+  },
+  {
+    "id": "ofamed-kasa-lipat-xray",
+    "name": "Ofamed Kasa Lipat X-Ray",
+    "url": null,
+    "price": null,
+    "img": "img/produk/ofamed-kasa-lipat-xray.jpg",
+    "cat": "ofamed"
+  },
+  {
+    "id": "ofamed-apron-plastik",
+    "name": "Ofamed Apron Plastik",
+    "url": null,
+    "price": null,
+    "img": "img/produk/ofamed-apron-plastik.jpg",
+    "cat": "ofamed"
+  },
+  {
+    "id": "ofahusada-kasa-hydrophile",
+    "name": "Ofahusada Kasa Hydrophile",
+    "url": null,
+    "price": null,
+    "img": "img/produk/ofahusada-kasa-hydrophile.jpg",
+    "cat": "ofahusada"
+  }
 ]
